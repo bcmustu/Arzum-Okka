@@ -33,6 +33,7 @@ body {
    min-height: 100%;
    background: url(../Files/Pages/Static/background.jpg) no-repeat;
    background-size: cover;
+   background-attachment: fixed;
    margin: auto;
 }
 

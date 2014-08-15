@@ -70,7 +70,7 @@ nav .divNav ul.level1 li ul.level2 li a {
     background: #181818;
 }
 
-nav .divNav .navSeperator {
+header .navSeperator {
     width: 750px;
     height: 2px;
     top: 20px;
@@ -113,10 +113,10 @@ nav .divNav .navSeperator {
         float: left;
     }
 
-    nav .divNav .navSeperator {
+    header .navSeperator {
         width: 100% !important;
         height: 2px;
-        top: -10px !important;
+        top: 38px !important;
         background: url(../Images/divider-nav.png) repeat-y center center !important;
     }
 
@@ -136,8 +136,6 @@ nav .divNav .navSeperator {
         right:0;
     }
 
-    }
-
     nav .divNav ul.level1 {
         width: 100%;
         height: 34px;
@@ -146,13 +144,17 @@ nav .divNav .navSeperator {
         top:31px;
     }
 
-    nav .divNav .navSeperator {
+    header .navSeperator {
         width: 700px;
         height: 2px;
-        margin: auto; 
-        top: -25px;
+        position: relative;
+        width: 100%;
+        top: -51px;
+        margin: auto;
         background: url(../Images/divider-nav.png) repeat-y;
-    }
+    
+        background-position-x: 120%;
+}
 
 
 }

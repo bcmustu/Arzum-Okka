@@ -42,7 +42,7 @@ var lastScrollBeforeReset;
 function showOrCloseMobileMenu(action) {
     if (!isMenuActive) {
         isMenuActive = true;
-        $('#navMobile .aMobileMenuIcon img').attr("src", "Images/@2x/icon-nav-close.png").css({ height: 13 });
+        $('#navMobile .aMobileMenuIcon img').attr("src", "Images/@2x/icon-close@2x.png");
         $('#divMobileMenuEntireContent ul').removeAttr('style');
 
         if (!isLoginActive) {
@@ -50,18 +50,18 @@ function showOrCloseMobileMenu(action) {
             $('footer').fadeOut(function () {
                 lastScrollBeforeReset = lastScrollAmount;
                 $(window).scrollTop(0);
-                $('#divMobileMenuEntireContent').css({ top: 100 }).fadeIn();
+                $('#divMobileMenuEntireContent').css({ top: 80 }).fadeIn();
             });
         }
         else {
             showOrCloseMobileLogin("menuSwitch");
             $(window).scrollTop(0);
-            $('#divMobileMenuEntireContent').css({ top: 100 }).fadeIn();
+            $('#divMobileMenuEntireContent').css({ top: 80 }).fadeIn();
         }
     }
     else {
         isMenuActive = false;
-        $('#navMobile .aMobileMenuIcon img').attr("src", "Images/@2x/icon-mobile-nav@2x.png").css({ height: 12 });
+        $('#navMobile .aMobileMenuIcon img').attr("src", "Images/@2x/icon-mobile-nav@2x.png");
         $('#divMobileMenuEntireContent').fadeOut(function () {
             if (action != "menuSwitch") {
                 $('main').show();

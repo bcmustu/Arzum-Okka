@@ -36,6 +36,7 @@ header .divContent a img {
         width: 90%;
         padding-top: 20px;
         height: 60px;
+        position:absolute;
     }
 
     header .divContent .aLogo:link,
@@ -46,7 +47,9 @@ header .divContent a img {
     header .divContent a img {
         width: 90px;
         height: auto;
-    }
+    
+        left: 30px;
+}
 
 }
 
