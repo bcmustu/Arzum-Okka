@@ -3,11 +3,16 @@ $(document).ready(function () {
 });
 
 
+
+var resetingMobileNavScrollVal = 40;
+var isMenuActive = false;
+var isLoginActive = false;
+
+
 // mobile menu actions
 function setupMobileMenu() {
    // if (deviceIs == "smartphone") {
         // move childs to outer hierarchy
-
 
     $('#divMobileMenuEntireContent .ulMobileSubMenu1').each(function (index, elem) {
         // 1. move sub
@@ -22,52 +27,41 @@ function setupMobileMenu() {
             $('#divMobileMenuEntireContent').append(subSubMenu);
         }
     });
-    
-
-
-
-
-
 
     //}
 }
+
 
 
 var menuAnimationSpeed = 500;
 var menuAnimationStyle = 'swing';
 var lastScrollBeforeReset;
 
+
+
 function showOrCloseMobileMenu(action) {
     if (!isMenuActive) {
         isMenuActive = true;
-        $('#navMobile .aMobileMenuIcon img').attr("src", "Images/Header/close.png").css({ height: 13 });
+        $('#navMobile .aMobileMenuIcon img').attr("src", "Images/close.png").css({ height: 13 });
         $('#divMobileMenuEntireContent ul').removeAttr('style');
 
         if (!isLoginActive) {
-            mobileNavHideNotification();
             $('main').fadeOut();
             $('footer').fadeOut(function () {
                 lastScrollBeforeReset = lastScrollAmount;
                 $(window).scrollTop(0);
-                $('#divMobileMenuEntireContent').css({ top: mH }).fadeIn();
+                $('#divMobileMenuEntireContent').css({ top: 100 }).fadeIn();
             });
         }
         else {
             showOrCloseMobileLogin("menuSwitch");
             $(window).scrollTop(0);
-            $('#divMobileMenuEntireContent').css({ top: mH }).fadeIn();
+            $('#divMobileMenuEntireContent').css({ top: 100 }).fadeIn();
         }
     }
     else {
         isMenuActive = false;
-        $('#navMobile .aMobileMenuIcon img').attr("src", "Images/Header/nav.png").css({ height: 12 });
-
-        if (action != "menuSwitch") {
-            if (lastScrollBeforeReset < resetingMobileNavScrollVal) { // if last scroll is smaller than value open the notification
-                mobileNavShowNotification();
-            }
-        }
-
+        $('#navMobile .aMobileMenuIcon img').attr("src", "Images/nav.png").css({ height: 12 });
         $('#divMobileMenuEntireContent').fadeOut(function () {
             if (action != "menuSwitch") {
                 $('main').show();
@@ -98,6 +92,8 @@ function showSubMenu(subMenuID) {
     }
 }
 
+
+
 function showSubSubMenu(subMenuID, subSubMenuID) {
     if (!isMobileMenuAnimated) {
         isMobileMenuAnimated = true;
@@ -112,6 +108,8 @@ function showSubSubMenu(subMenuID, subSubMenuID) {
     }
 }
 
+
+
 function backToMainMenu(subMenuID) {
     if (!isMobileMenuAnimated) {
         isMobileMenuAnimated = true;
@@ -122,6 +120,9 @@ function backToMainMenu(subMenuID) {
         });
     }
 }
+
+
+
 function backToSubMenu1(subMenuID, subSubMenuID) {
     if (!isMobileMenuAnimated) {
         isMobileMenuAnimated = true;
