@@ -42,7 +42,7 @@ var lastScrollBeforeReset;
 function showOrCloseMobileMenu(action) {
     if (!isMenuActive) {
         isMenuActive = true;
-        $('#navMobile .aMobileMenuIcon img').attr("src", "Images/close.png").css({ height: 13 });
+        $('#navMobile .aMobileMenuIcon img').attr("src", "Images/@2x/icon-nav-close.png").css({ height: 13 });
         $('#divMobileMenuEntireContent ul').removeAttr('style');
 
         if (!isLoginActive) {
@@ -61,7 +61,7 @@ function showOrCloseMobileMenu(action) {
     }
     else {
         isMenuActive = false;
-        $('#navMobile .aMobileMenuIcon img').attr("src", "Images/nav.png").css({ height: 12 });
+        $('#navMobile .aMobileMenuIcon img').attr("src", "Images/@2x/icon-mobile-nav@2x.png").css({ height: 12 });
         $('#divMobileMenuEntireContent').fadeOut(function () {
             if (action != "menuSwitch") {
                 $('main').show();
@@ -116,8 +116,10 @@ function backToMainMenu(subMenuID) {
         $('#divMobileMenuEntireContent .ulMobileSubMenu1[data-sub-menu-id=' + subMenuID + ']').css({ position: 'absolute' }).animate({ left: '100%' }, menuAnimationSpeed, menuAnimationStyle, function () { $(this).hide() });
         $('#divMobileMenuEntireContent .ulMobileMenu1').show().animate({ marginLeft: '0' }, menuAnimationSpeed, menuAnimationStyle);
         $('#divMobileMenuEntireContent .ulMobileMenu2').show().animate({ marginLeft: '0' }, menuAnimationSpeed, menuAnimationStyle, function () {
-            isMobileMenuAnimated = false;
         });
+        setTimeout(function(){
+            isMobileMenuAnimated = false;
+        },500);
     }
 }
 
