@@ -67,7 +67,7 @@
     font-family: avenir;
     color: #ad9a8b;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 15px;
     padding:15px 0 15px 5%;
     position:relative;
 }
@@ -80,6 +80,7 @@
     width:7px;
     height:13px;
     position:absolute;
+    top: 16px;
     right:5%;
 }
 
