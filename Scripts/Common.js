@@ -68,6 +68,8 @@ function setGlobals() {
     sW = screen.width;
     sH = screen.height;
     hH = $('header').height();
+    mH = (deviceIs == "smartphone" ? $('#navMobile').outerHeight() : $('#navMain').outerHeight());
+    isLandscape = (wW >= wH);
     isLandscape = (wW >= wH);
     isPortrait = (wW < wH);
 }
