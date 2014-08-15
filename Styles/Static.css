@@ -10,7 +10,7 @@ section.staticPage {}
 section.staticPage .pageContent {
     position: fixed;
     width: 500px;
-    height: 400px;
+    height: 425px;
     bottom: 0px;
     left: 50%;
     background: #411c13;
@@ -21,14 +21,16 @@ section.staticPage .pageContent .pageTitle {
     padding-top: 20px;
     margin: 35px auto;
     border-top:1px solid #fee5cc;
+    line-height: 30px;
 }
 
 section.staticPage .pageContent .pageDescription {
     width: 90%;
+    height: 250px;
     padding-bottom: 20px;
     margin: 30px auto;
-    border-bottom:1px solid #fee5cc;
     text-align: justify;
+    overflow: scroll;
 }
 
 
