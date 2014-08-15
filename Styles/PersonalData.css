@@ -42,10 +42,15 @@ section.personalDataPage .pageContent .formSection {
     section.personalDataPage .pageContent {
         width: 90%;
         padding-bottom: 50px;
-        top: 250px;
-        right: 5%;
+        right: 0;
+        top: 50%;
+        margin: 0 auto;
+        margin-top: 50%;
         background: rgba(189,177,172, 0.9);
-    }
+    
+        position: relative;
+        min-height: 100%;
+}
 
 }
 
@@ -55,18 +60,19 @@ section.personalDataPage .pageContent .formSection {
 
 @media all and (min-width: 701px) and (max-width: 1018px) {
 
-    section.personalDataPage {
-        background: #000; 
+    section.personalDataPage { 
     }
 
     section.personalDataPage .pageContent {
         width: 90%;
-        right: 5%;
+        right: 0;
         margin: auto;
         height: auto !important;
-        top: 250px;
+        margin-top: 20%;
         background: rgba(189,177,172, 0.9);
-    }
+    
+        position: relative;
+}
 
     section.personalDataPage .pageContent .formSection {
         width: 90%;
