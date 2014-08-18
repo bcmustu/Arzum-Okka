@@ -9,31 +9,54 @@ textarea{
 
 
 /* Customized */
-.inputTextA{
+.inputTextE{
+    width: 100%;
+    height: 25px;
+    background-color: #e2cfbf;
+    border: 0px;
+    color: #441e15;
+    font-family: MyriadPro;
+    font-weight:500;
+    padding:20px;
+    margin-bottom:5px;
 }
 
-.inputTextA::-webkit-input-placeholder { /* WebKit browsers */
+.inputTextE::-webkit-input-placeholder { /* WebKit browsers */
+    color: #441e15;
 }
-.inputTextA:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+.inputTextE:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: #441e15;
 }
-.inputTextA::-moz-placeholder { /* Mozilla Firefox 19+ */
+.inputTextE::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: #441e15;
 }
-.inputTextA:-ms-input-placeholder { /* Internet Explorer 10+ */
+.inputTextE:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color: #441e15;
 }
 /* BUTTON STARTS HERE */
 
-/*BLACK BUTTON STYLE */
-.buttonA{
+/*BUTTON STYLE */
+.buttonB{
+    background: #e2cfbf;
+    border: 0;
+    font-family: myriadPro;
+    padding: 5px 20px;
+    padding-top: 9px;
+    font-weight: 500;
+    float: right;
+    margin-top: 15px;
+    z-index: 2;
+    cursor: pointer;
 }
 
-.buttonA:hover{
+.buttonB:hover{
 
 }
 
-.buttonA:active{
+.buttonB:active{
 
 }
-/*END BLACK BUTTON STYLE*/
+/*END BUTTON STYLE*/
 
 
 
@@ -78,8 +101,47 @@ textarea{
 }
 
 
+.labelA {
+    display: inline-block;
+    height: 38px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 21px;
+    letter-spacing: 0.040em;
+    transition: all 0.2s;
+}
 
+    .labelA:hover:after {
+        opacity: 1;
+    }
 
+.labelA a {
+	font-family:myriadpro;
+    display: inline-block;
+    color:#000;
+}
+
+input[type="checkbox"] {
+    display: inline-block;
+    top:10px;
+    margin-right: 10px;
+    width: 22px;
+    height: 22px;
+    border: 2px solid #000;
+    transition: none;
+    cursor: pointer;
+}
+
+input[type="checkbox"].checkboxTypeA {
+    width: 12px;
+    height: 12px;
+    top: 5px;
+}
+
+    input[type="checkbox"]:checked {
+        background: url(../images/checkbox.png) no-repeat center;
+        background-size: 60%;
+    }
 
 
 

@@ -26,13 +26,61 @@ section.personalDataPage .pageContent .formSection {
     padding-bottom: 20px;
     margin: 30px auto;
     text-align: justify;
-    background: #fff;
 }
 
 
+a.signUp, a.forgotPassword {
+    margin-top: 11px;
+    transition: all 0.3s;
+    margin-left: 20px;
+    width: 200px;
+}
+
+span.spanOr {
+    margin: 20px 0px;
+
+    text-align: center;
+    width: 100%;
+}
+
+select.input {
+    background-image: url(../images/@2x/icon-arrow-down-dark@2x.png);
+    background-repeat: no-repeat;
+    background-position: 94%;
+    background-size: 15px;
+    padding:0px;
+    padding-left:20px;
+    height:40px;
+}
 
 
+div.divSocialIcons a.aSocialIcon {
+    float: left;
+    width: 170px;
+    height: 35px;
+    margin: 5px;
+    text-align: center;
+    border: 1px solid #e2cfbf;
+    transition:all 0.3s;
+    text-align: left;
+}
+div.divSocialIcons a.aSocialIcon:hover {
+    background-color: #e2cfbf;
+}
+div.divSocialIcons a.aSocialIcon img {
+    height: 15px;
+    margin: 0 auto;
+    float: left;
+    margin-top: 9px;
+    margin-left: 15px;
+    margin-right: 13px;
+}
 
+
+a.contShopping {
+    text-decoration: underline !important;
+    margin-top: 5px;
+}
 
 
 
@@ -93,25 +141,3 @@ section.personalDataPage .pageContent .formSection {
 @media all and (min-width: 1275px) {
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
