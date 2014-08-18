@@ -26,16 +26,16 @@ nav .divNav ul.level1 li {
 }
 
 nav .divNav ul.level1 li a {
-    height: 55px;
+    height: 50px;
 }
 
-/*
-nav .divNav ul.level1 li a:hover ~ ul.level2 {
+
+nav .divNav ul.level1 li a:hover ~ ul.level2 , nav .divNav ul.level1 li ul.level2:hover{
     display: block;
     opacity: 1;
     height: auto;
 }
-*/
+
 
 nav .divNav ul.level1 li ul.level2 { 
     position: absolute;
@@ -47,15 +47,15 @@ nav .divNav ul.level1 li ul.level2 {
     border: 1px solid #785a4e;
     text-align: left;
     opacity: 0;
-    transition: opacity 0.3s, display 0s 0.3s;
-    display: none;
+    transition: opacity 0.3s, height 0s 0.3s;
+    display: block;
 }
 
 nav .divNav ul.level1 li ul.level2 li {
     width: 190px;
     float: left;
     padding: 0px; 
-    border-bottom: 1px solid #785a4e;
+    border-bottom: 1px solid #72574e;
 }
 
 nav .divNav ul.level1 li ul.level2 li:last-child {
@@ -67,8 +67,50 @@ nav .divNav ul.level1 li ul.level2 li a {
     padding-right: 30px;
     padding-top: 20px;
     padding-bottom: 20px;
-    background: #181818;
+    background: #381915;
 }
+
+nav .divNav ul.level2 li a:hover ~ ul.level3 , nav .divNav ul.level2 li ul.level3:hover{
+    display: block;
+    opacity: 1;
+    height: auto;
+}
+
+nav .divNav ul.level1 li ul.level3 { 
+    position: absolute;
+    width: 192px;
+    height: 0;
+    top: -1px;
+    margin-left: 190px;
+    background: #381915;
+    border: 1px solid #785a4e;
+    text-align: left;
+    opacity: 0;
+    transition: opacity 0.3s, height 0s 0.3s;
+    display: block;
+}
+
+nav .divNav ul.level1 li ul.level3 li {
+    width: 190px;
+    float: left;
+    padding: 0px; 
+    border-bottom: 1px solid #72574e;
+}
+
+nav .divNav ul.level1 li ul.level3 li:last-child {
+    border-bottom: 0px;
+}
+
+nav .divNav ul.level1 li ul.level3 li a {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: #381915;
+}
+
+
+
 
 header .navSeperator {
     width: 750px;
@@ -76,7 +118,7 @@ header .navSeperator {
     top: 0px;
     background: url(../Images/divider-nav.png) repeat-y;
     margin: 0 auto;
-    left: 130px;
+    left: 240px;
 }
 
 
