@@ -8,8 +8,43 @@ textarea{
 }
 
 
+
+
+
 /* Customized */
-.inputTextA{
+.inputTextA {
+    border: 0; /*Removes border*/
+    -webkit-appearance: none; /*Removes default chrome and safari style*/
+    -moz-appearance: none; /* Removes Default Firefox style*/
+    background-color: transparent;
+    text-indent: 0.01px; /* Removes default arrow from firefox*/
+    text-overflow: ""; /*Removes default arrow from firefox*/ 
+    border-radius: 0;
+    cursor:pointer;
+}
+
+.inputTextA::-ms-expand {
+    display: none;
+}
+
+.inputTextA {
+    display:block;
+    font-family:'Source Sans Pro';
+    width: 170px; 
+    padding:5px 10px 5px 10px;
+    color:#999;
+    font-size:12px;
+    font-weight:500;
+    letter-spacing:1px;
+    border:1px solid #ccc;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+
+.inputTextA:hover,
+.inputTextA:focus  {
+    color:#333;
+    border:1px solid #777;
 }
 
 .inputTextA::-webkit-input-placeholder { /* WebKit browsers */
@@ -20,7 +55,100 @@ textarea{
 }
 .inputTextA:-ms-input-placeholder { /* Internet Explorer 10+ */
 }
-/* BUTTON STARTS HERE */
+
+
+
+
+.warningA{
+    border:1px solid #ff0000;
+    background-color:#fff;
+}
+
+
+
+
+.selectStyleA{
+    display:block;
+    background-image:url('../Images/arrow03.png');
+    background-repeat:no-repeat;
+    background-position:95% center;
+    font-family:'Source Sans Pro';
+    width: 300px !important;
+    padding:5px 0 5px 10px;
+    color:#999;
+    font-size:12px;
+    font-weight:500;
+    letter-spacing:1px;
+    border:1px solid #ccc;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+
+.selectStyleA:hover,
+.selectStyleA:focus  {
+    color:#333;
+    border:1px solid #777;
+}
+
+
+
+
+
+.selectStyleB{
+}
+
+.selectStyleB option{
+}
+
+
+
+
+
+
+.textareaStyleA {
+    display:block;
+    font-family:'Source Sans Pro';
+    width:350px; 
+    height:60px;
+    padding:5px 10px 5px 10px;
+    color:#999;
+    font-size:12px;
+    font-weight:500;
+    letter-spacing:1px;
+    border:1px solid #ccc;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+
+.textareaStyleA:hover,
+.textareaStyleA:focus  {
+    color:#333;
+    border:1px solid #777;
+}
+
+
+
+
+
+.textareaStyleB{
+
+}
+
+
+
+
+
+
+.labelStyleA{
+}
+
+.labelStyleB{
+}
+
+
+
+
+
 
 /*BLACK BUTTON STYLE */
 .buttonA{
@@ -34,48 +162,6 @@ textarea{
 
 }
 /*END BLACK BUTTON STYLE*/
-
-
-
-
-
-
-
-
-
-.selectStyleA{
-}
-
-.selectStyleA option{
-}
-
-.selectStyleB{
-}
-
-.selectStyleB option{
-}
-
-
-
-
-
-.textareaStyleA{
-
-}
-
-.textareaStyleB{
-
-}
-
-
-
-
-
-.labelStyleA{
-}
-
-.labelStyleB{
-}
 
 
 
