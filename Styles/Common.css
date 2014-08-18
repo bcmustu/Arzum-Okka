@@ -5,9 +5,10 @@ html {
 
 
 body {
-    background: #876555;
+    background: #f0caaa;
     height: 100%;
 }
+
 
 #wrapper {
    max-width: 1280px;
@@ -43,7 +44,6 @@ body {
    background-size: cover;
    margin: auto;
 }
-
 
 
 
@@ -100,14 +100,14 @@ main {
        background-size: cover; 
     }
 
-    #wrapper-detail {
-       max-width: 1280px;
-       min-height: 100%;
-       background: url(../Files/Products/01/Pictures/background-portrait.jpg) no-repeat;
-       background-position: left top;
-       background-color: #411c13;
-       margin: auto;
-    }
+  #wrapper-detail {
+     max-width: 1280px;
+     min-height: 100%;
+     background: url(../Files/Products/01/Pictures/background-portrait.jpg) no-repeat;
+     background-position: left top;
+     background-color: #411c13;
+     margin: auto;
+  }
 
 }
 
