@@ -2,7 +2,6 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 
-
     <title>ARZUM OKKA</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
@@ -16,33 +15,35 @@
     <link rel="stylesheet" type="text/css" href="Styles/Typography.css" />
     <link rel="stylesheet" type="text/css" href="Styles/Common.css" />
     <link rel="stylesheet" type="text/css" href="Styles/Header.css" />
-    <link rel="stylesheet" type="text/css" href="Styles/Navi.css" />  
+    <link rel="stylesheet" type="text/css" href="Styles/Navi.css" />
+    <link rel="stylesheet" type="text/css" href="Styles/Form.css" />
     <link rel="stylesheet" type="text/css" href="Styles/MobileMenu.css" />
-    <link rel="stylesheet" type="text/css" href="Styles/Default.css" />
-
+    <link rel="stylesheet" type="text/css" href="Styles/MobileBasket.css" />
 
 </head>
 <body>
 
-    <!-- WRAPPER START -->
-    <div id="wrapper" class="wrapper">
 
+    <!-- WRAPPER START -->
+    <div id="wrapper-photo" class="wrapper">
 
         <!-- HEADER START -->
         <header>
-            <div class="divContent">
+            <div class="divContent staticPageNav">
 
                 <!-- LOGOTYPE START -->
                 <a href="#" class="aLogo"><img data-sixtythree="logotype" /></a>
                 <!-- LOGOTYPE FINISH -->
-
                 <!-- NAVIGATION START -->
                 <nav>
                     <div class="divNav">
 
                         <ul class="level1">
-                            <li><a href="#" class="aStyleA">TÜRK KAHVESİ<br> DÜNYASI</a></li>
-                            <li><a href="#" class="aStyleA">ARZUM<br> OKKA DÜNYASI</a>
+                            <li>
+                                <a href="#" class="aStyleA">TÜRK KAHVESİ<br> DÜNYASI</a>
+                            </li>
+                            <li>
+                                <a href="#" class="aStyleA">ARZUM<br> OKKA DÜNYASI</a>
                                 <ul class="level2">
                                     <li><a href="#" class="aStyleB">PRODUCT INFORMATION</a></li>
                                     <li><a href="#" class="aStyleB">DEMO VIDEO</a></li>
@@ -64,21 +65,16 @@
             </div>
 
 
+            <!-- MOBILE MAIN MENU -->
+            <nav id="navMobile">
+                <a href="javascript:showOrCloseMobileMenu('-1');" class="aMobileMenuIcon"><img data-sixtythree="icon-mobile-nav"></a>
+            </nav>
+            <!-- END - MOBILE MAIN MENU -->
 
-
-
-        <!-- MOBILE MAIN MENU -->
-        <nav id="navMobile">
-            <a href="javascript:showOrCloseMobileMenu('-1');" class="aMobileMenuIcon"><img data-sixtythree="icon-mobile-nav"></a>
-        </nav>
-        <!-- END - MOBILE MAIN MENU -->
-
-
-        <div class="navSeperator"></div>
+            <div class="navSeperator"></div>
 
         </header>
         <!-- HEADER FINISH -->
-
 
 
         <!-- MOBILE SITE MAIN MENU CONTENT -->
@@ -196,31 +192,117 @@
         <!-- END - MOBILE SITE MAIN MENU CONTENT -->
 
 
-        <!-- MAIN START -->
+
         <main>
+            <section id="mobileBasket">
+                <div class="divContent">
 
-            <!-- WELCOME TEXT START -->
-            <h1 class="welcomeText faceA">RICH TURKISH COFFEE EXPERIENCE,<br> ENJOY!</h1>
-            <!-- WELCOME TEXT FINISH -->
+                    <div class="divBasketRow">
+                        <img src="Images/Basket/img1.jpg" />
 
+                        <div class="divRowContent">
+                            <div>
+                                <div>
+                                    <h2>KADIN DERİ MONT</h2>
+                                    <h3>MAVİ, S BEDEN</h3>
+                                </div>
+                                <a href="#"><img src="Images/Basket/bin.png" width="15"></a>
+                            </div>
+                            <div>
+                                <div><input type="text" /> ADET</div>
+                                <div>89.00 TL</div>
+                            </div>
+                        </div>
+
+                        <div class="separator"></div>
+                    </div>
+
+                    <div class="divBasketRow">
+                        <img src="Images/Basket/img1.jpg" />
+
+                        <div class="divRowContent">
+                            <div>
+                                <div>
+                                    <h2>KADIN DERİ MONT</h2>
+                                    <h3>MAVİ, S BEDEN</h3>
+                                </div>
+                                <a href="#"><img src="Images/Basket/bin.png" width="15"></a>
+                            </div>
+                            <div>
+                                <div><input type="text" /> ADET</div>
+                                <div>89.00 TL</div>
+                            </div>
+                        </div>
+
+                        <div class="separator"></div>
+                    </div>
+
+                    <div class="divBasketRow">
+                        <img src="Images/Basket/img1.jpg" />
+
+                        <div class="divRowContent">
+                            <div>
+                                <div>
+                                    <h2>KADIN DERİ MONT</h2>
+                                    <h3>MAVİ, S BEDEN</h3>
+                                </div>
+                                <a href="#"><img src="Images/Basket/bin.png" width="15"></a>
+                            </div>
+                            <div>
+                                <div><input type="text" /> ADET</div>
+                                <div>89.00 TL</div>
+                            </div>
+                        </div>
+
+                        <div class="separator"></div>
+                    </div>
+
+                    <div class="divTotal">
+                        <div class="divTotalContent">
+                            <div>
+                                <div>
+                                    <span>SİPARİŞ TUTARI</span>
+                                    <span>KARGO BEDELİ</span>
+                                    <span>İNDİRİMLER</span>
+                                </div>
+                                <div>
+                                    <span>1.260.47</span>
+                                    <span>4.99</span>
+                                    <span>-10.49</span>
+                                </div>
+                                <div class="separator"></div>
+                            </div>
+                            <div>
+                                <div><span>GENEL TOPLAM</span></div>
+                                <div><span>1.820.00</span></div>
+                                <div class="separator"></div>
+                            </div>
+                        </div>
+                        <div class="separator"></div>
+                    </div>
+
+                    <a href="Checkout.html" class="aButton"><span>SİPARİŞİ TAMAMLA</span></a>
+
+                </div>
+            </section>
         </main>
-        <!-- MAIN FINISH -->
+
 
 
         <!-- FOOTER START -->
         <footer></footer>
         <!-- FOOTER FINISH -->
 
-
     </div>
     <!-- WRAPPER FINISH -->
+
+
 
     <!-- SCRIPTS -->
     <script type="text/javascript" src="Scripts/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="Scripts/jquery-ui.js"></script>
     <script type="text/javascript" src="Scripts/Common.js"></script>
     <script type="text/javascript" src="Scripts/MobileMenu.js"></script>
-    <script type="text/javascript" src="Scripts/Default.js"></script>
     <!-- END - SCRIPTS -->
 
 
