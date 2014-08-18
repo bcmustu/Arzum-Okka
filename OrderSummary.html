@@ -2,7 +2,6 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 
-
     <title>ARZUM OKKA</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
@@ -16,33 +15,34 @@
     <link rel="stylesheet" type="text/css" href="Styles/Typography.css" />
     <link rel="stylesheet" type="text/css" href="Styles/Common.css" />
     <link rel="stylesheet" type="text/css" href="Styles/Header.css" />
-    <link rel="stylesheet" type="text/css" href="Styles/Navi.css" />  
+    <link rel="stylesheet" type="text/css" href="Styles/Navi.css" />
+    <link rel="stylesheet" type="text/css" href="Styles/Form.css" />
     <link rel="stylesheet" type="text/css" href="Styles/MobileMenu.css" />
-    <link rel="stylesheet" type="text/css" href="Styles/Default.css" />
-
+    <link rel="stylesheet" type="text/css" href="Styles/OrderSummary.css" />
 
 </head>
 <body>
 
     <!-- WRAPPER START -->
-    <div id="wrapper" class="wrapper">
-
+    <div id="wrapper-photo" class="wrapper">
 
         <!-- HEADER START -->
         <header>
-            <div class="divContent">
+            <div class="divContent staticPageNav">
 
                 <!-- LOGOTYPE START -->
                 <a href="#" class="aLogo"><img data-sixtythree="logotype" /></a>
                 <!-- LOGOTYPE FINISH -->
-
                 <!-- NAVIGATION START -->
                 <nav>
                     <div class="divNav">
 
                         <ul class="level1">
-                            <li><a href="#" class="aStyleA">TÜRK KAHVESİ<br> DÜNYASI</a></li>
-                            <li><a href="#" class="aStyleA">ARZUM<br> OKKA DÜNYASI</a>
+                            <li>
+                                <a href="#" class="aStyleA">TÜRK KAHVESİ<br> DÜNYASI</a>
+                            </li>
+                            <li>
+                                <a href="#" class="aStyleA">ARZUM<br> OKKA DÜNYASI</a>
                                 <ul class="level2">
                                     <li><a href="#" class="aStyleB">PRODUCT INFORMATION</a></li>
                                     <li><a href="#" class="aStyleB">DEMO VIDEO</a></li>
@@ -64,21 +64,16 @@
             </div>
 
 
+            <!-- MOBILE MAIN MENU -->
+            <nav id="navMobile">
+                <a href="javascript:showOrCloseMobileMenu('-1');" class="aMobileMenuIcon"><img data-sixtythree="icon-mobile-nav"></a>
+            </nav>
+            <!-- END - MOBILE MAIN MENU -->
 
-
-
-        <!-- MOBILE MAIN MENU -->
-        <nav id="navMobile">
-            <a href="javascript:showOrCloseMobileMenu('-1');" class="aMobileMenuIcon"><img data-sixtythree="icon-mobile-nav"></a>
-        </nav>
-        <!-- END - MOBILE MAIN MENU -->
-
-
-        <div class="navSeperator"></div>
+            <div class="navSeperator"></div>
 
         </header>
         <!-- HEADER FINISH -->
-
 
 
         <!-- MOBILE SITE MAIN MENU CONTENT -->
@@ -196,32 +191,134 @@
         <!-- END - MOBILE SITE MAIN MENU CONTENT -->
 
 
-        <!-- MAIN START -->
+
         <main>
 
-            <!-- WELCOME TEXT START -->
-            <h1 class="welcomeText faceA">RICH TURKISH COFFEE EXPERIENCE,<br> ENJOY!</h1>
-            <!-- WELCOME TEXT FINISH -->
+            <section id="orderSummary">
+
+                <h1>SİPARİŞ ÖZETİ DETAYLARI</h1>
+
+                <!-- ORDER SUMMARY INFO -->
+                <div class="divOrderSummaryInfo tab">
+
+                    <div class="divContent">
+                        <span>Sipariş Referans Numarası : <b>752</b></span>
+                        <p>Siparişiniz başarıyla tamamlanmıştır, teşekkür ederiz.</p>
+                        <table>
+                            <tr>
+                                <th></th>
+                                <th>ÜRÜN ADI</th>
+                                <th>FİYAT</th>
+                                <th>ADET</th>
+                                <th>TOPLAM</th>
+                            </tr>
+                            <tr>
+                                <td><img src="Images/Checkout/img1.jpg" /></td>
+                                <td>
+                                    <span class="ref">REF:S8548-1010018327002</span>
+                                    <h1>DAREN DERİ ÇAPRAZ ÇANTA</h1>
+                                    <h2>SİYAH, M</h2>
+                                </td>
+                                <td>
+                                    <span>1129.50</span>
+                                </td>
+                                <td><span>25</span></td>
+                                <td><span>1129.50</span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="Images/Checkout/img1.jpg" /></td>
+                                <td>
+                                    <span class="ref">REF:S8548-1010018327002</span>
+                                    <h1>DAREN DERİ ÇAPRAZ ÇANTA</h1>
+                                    <h2>SİYAH, M</h2>
+                                </td>
+                                <td>
+                                    <span>1129.50</span>
+                                </td>
+                                <td><span>1</span></td>
+                                <td><span>1129.50</span></td>
+                            </tr>
+                            <tr>
+                                <td><img src="Images/Checkout/img1.jpg" /></td>
+                                <td>
+                                    <span class="ref">REF:S8548-1010018327002</span>
+                                    <h1>DAREN DERİ ÇAPRAZ ÇANTA</h1>
+                                    <h2>SİYAH, M</h2>
+                                </td>
+                                <td>
+                                    <span>1129.50</span>
+                                </td>
+                                <td><span>1</span></td>
+                                <td><span>1129.50</span></td>
+                            </tr>
+                        </table>
+
+
+                        <div class="divTotal">
+                            <div class="divTotalContent">
+                                <div>
+                                    <div>
+                                        <span>SİPARİŞ TUTARI</span>
+                                        <span>KARGO BEDELİ</span>
+                                        <span>İNDİRİMLER</span>
+                                    </div>
+                                    <div>
+                                        <span>1.260.47</span>
+                                        <span>4.99</span>
+                                        <span>-10.49</span>
+                                    </div>
+                                    <div class="separator"></div>
+                                </div>
+                                <div>
+                                    <div><span>GENEL TOPLAM</span></div>
+                                    <div><span>1.820.00</span></div>
+                                    <div class="separator"></div>
+                                </div>
+                            </div>
+                            <div class="separator"></div>
+                        </div>
+
+
+                        <div class="divDeliveryInformation">
+                            <h2>TESLİMAT BİLGİLERİ</h2>
+                            <span>Derya Laleli</span>
+                            <p>Şemsi Paşa Pasajı Caddesi 25652 İstanbul</p>
+                        </div>
+
+
+                        <div class="divBillingInformation">
+                            <h2>FATURA BİLGİLERİ</h2>
+                            <span>Derya Laleli</span>
+                            <p>Şemsi Paşa Pasajı Caddesi 25652 İstanbul</p>
+                        </div>
+
+                        <div class="separator"></div>
+                    </div>
+
+                </div>
+            </section>
+            <!-- END - ORDER SUMMARY DETAILS -->
 
         </main>
-        <!-- MAIN FINISH -->
+
 
 
         <!-- FOOTER START -->
         <footer></footer>
         <!-- FOOTER FINISH -->
 
-
     </div>
     <!-- WRAPPER FINISH -->
+
+
 
     <!-- SCRIPTS -->
     <script type="text/javascript" src="Scripts/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="Scripts/jquery-ui.js"></script>
     <script type="text/javascript" src="Scripts/Common.js"></script>
     <script type="text/javascript" src="Scripts/MobileMenu.js"></script>
-    <script type="text/javascript" src="Scripts/Default.js"></script>
     <!-- END - SCRIPTS -->
+
 
 
 </body>

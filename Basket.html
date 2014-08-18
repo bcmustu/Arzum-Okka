@@ -2,7 +2,6 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 
-
     <title>ARZUM OKKA</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
@@ -16,33 +15,35 @@
     <link rel="stylesheet" type="text/css" href="Styles/Typography.css" />
     <link rel="stylesheet" type="text/css" href="Styles/Common.css" />
     <link rel="stylesheet" type="text/css" href="Styles/Header.css" />
-    <link rel="stylesheet" type="text/css" href="Styles/Navi.css" />  
+    <link rel="stylesheet" type="text/css" href="Styles/Navi.css" />
+    <link rel="stylesheet" type="text/css" href="Styles/Form.css" />
     <link rel="stylesheet" type="text/css" href="Styles/MobileMenu.css" />
-    <link rel="stylesheet" type="text/css" href="Styles/Default.css" />
-
+    <link rel="stylesheet" type="text/css" href="Styles/Basket.css" />
 
 </head>
 <body>
 
-    <!-- WRAPPER START -->
-    <div id="wrapper" class="wrapper">
 
+    <!-- WRAPPER START -->
+    <div id="wrapper-photo" class="wrapper">
 
         <!-- HEADER START -->
         <header>
-            <div class="divContent">
+            <div class="divContent staticPageNav">
 
                 <!-- LOGOTYPE START -->
                 <a href="#" class="aLogo"><img data-sixtythree="logotype" /></a>
                 <!-- LOGOTYPE FINISH -->
-
                 <!-- NAVIGATION START -->
                 <nav>
                     <div class="divNav">
 
                         <ul class="level1">
-                            <li><a href="#" class="aStyleA">TÜRK KAHVESİ<br> DÜNYASI</a></li>
-                            <li><a href="#" class="aStyleA">ARZUM<br> OKKA DÜNYASI</a>
+                            <li>
+                                <a href="#" class="aStyleA">TÜRK KAHVESİ<br> DÜNYASI</a>
+                            </li>
+                            <li>
+                                <a href="#" class="aStyleA">ARZUM<br> OKKA DÜNYASI</a>
                                 <ul class="level2">
                                     <li><a href="#" class="aStyleB">PRODUCT INFORMATION</a></li>
                                     <li><a href="#" class="aStyleB">DEMO VIDEO</a></li>
@@ -64,21 +65,16 @@
             </div>
 
 
+            <!-- MOBILE MAIN MENU -->
+            <nav id="navMobile">
+                <a href="javascript:showOrCloseMobileMenu('-1');" class="aMobileMenuIcon"><img data-sixtythree="icon-mobile-nav"></a>
+            </nav>
+            <!-- END - MOBILE MAIN MENU -->
 
-
-
-        <!-- MOBILE MAIN MENU -->
-        <nav id="navMobile">
-            <a href="javascript:showOrCloseMobileMenu('-1');" class="aMobileMenuIcon"><img data-sixtythree="icon-mobile-nav"></a>
-        </nav>
-        <!-- END - MOBILE MAIN MENU -->
-
-
-        <div class="navSeperator"></div>
+            <div class="navSeperator"></div>
 
         </header>
         <!-- HEADER FINISH -->
-
 
 
         <!-- MOBILE SITE MAIN MENU CONTENT -->
@@ -156,18 +152,18 @@
                 </li>
 
                 <!--<li>
-                    <a href="javascript:showSubMenu(15);">EĞLENCE KÖŞESİ<img src="Images/sectionArrow.png" /></a>
+                <a href="javascript:showSubMenu(15);">EĞLENCE KÖŞESİ<img src="Images/sectionArrow.png" /></a>
 
-                    <ul class="ulMobileSubMenu1" data-sub-menu-id='15'>
-                        <li><a href="javascript:backToMainMenu(15);" class="aActive"><img src="Images/backArrow.png" />EĞLENCE KÖŞESİ</a></li>
-                        <li>
-                            <a href="#">FAL<img src="Images/sectionArrow.png" /></a>
-                        </li>
-                        <li>
-                            <a href="#">OYUN<img src="Images/sectionArrow.png" /></a>
-                        </li>
-                    </ul>
-                </li> -->
+                <ul class="ulMobileSubMenu1" data-sub-menu-id='15'>
+                    <li><a href="javascript:backToMainMenu(15);" class="aActive"><img src="Images/backArrow.png" />EĞLENCE KÖŞESİ</a></li>
+                    <li>
+                        <a href="#">FAL<img src="Images/sectionArrow.png" /></a>
+                    </li>
+                    <li>
+                        <a href="#">OYUN<img src="Images/sectionArrow.png" /></a>
+                    </li>
+                </ul>
+            </li> -->
                 <li>
                     <a href="javascript:showSubMenu(16);">KAYIT FORMU<img data-sixtythree="icon-nav-next" /></a>
 
@@ -196,33 +192,133 @@
         <!-- END - MOBILE SITE MAIN MENU CONTENT -->
 
 
-        <!-- MAIN START -->
+
         <main>
 
-            <!-- WELCOME TEXT START -->
-            <h1 class="welcomeText faceA">RICH TURKISH COFFEE EXPERIENCE,<br> ENJOY!</h1>
-            <!-- WELCOME TEXT FINISH -->
+            <section id="basket">
+
+                <table>
+                    <tr>
+                        <th></th>
+                        <th>ÜRÜN ADI</th>
+                        <th>FİYAT</th>
+                        <th>SİL</th>
+                        <th>ADET</th>
+                        <th>TOPLAM</th>
+                    </tr>
+                    <tr>
+                        <td><img src="Images/Basket/img1.jpg" /></td>
+                        <td>
+                            <span class="ref">REF:S8548-1010018327002</span>
+                            <h1>DAREN DERİ ÇAPRAZ ÇANTA</h1>
+                            <h2>SİYAH, M</h2>
+                        </td>
+                        <td>
+                            <span class="old">2000.00</span>
+                            <span>1129.50</span>
+                        </td>
+                        <td><a href="#" class="aBin"><img src="Images/Basket/bin.png" style="width:15px;" /></a></td>
+                        <td>
+                            <a href="#" class="a">-</a>
+                            <div>100</div>
+                            <a href="#" class="a">+</a>
+                        </td>
+                        <td><span>1129.50</span></td>
+                    </tr>
+                    <tr>
+                        <td><img src="Images/Basket/img1.jpg" /></td>
+                        <td>
+                            <span class="ref">REF:S8548-1010018327002</span>
+                            <h1>DAREN DERİ ÇAPRAZ ÇANTA</h1>
+                            <h2>SİYAH, M</h2>
+                        </td>
+                        <td>
+                            <span class="old">2000.00</span>
+                            <span>1129.50</span>
+                        </td>
+                        <td><a href="#" class="aBin"><img src="Images/Basket/bin.png" style="width:15px;" /></a></td>
+                        <td>
+                            <a href="#" class="a">-</a>
+                            <div>100</div>
+                            <a href="#" class="a">+</a>
+                        </td>
+                        <td><span>1129.50</span></td>
+                    </tr>
+                    <tr>
+                        <td><img src="Images/Basket/img1.jpg" /></td>
+                        <td>
+                            <span class="ref">REF:S8548-1010018327002</span>
+                            <h1>DAREN DERİ ÇAPRAZ ÇANTA</h1>
+                            <h2>SİYAH, M</h2>
+                        </td>
+                        <td>
+                            <span class="old">2000.00</span>
+                            <span>1129.50</span>
+                        </td>
+                        <td><a href="#" class="aBin"><img src="Images/Basket/bin.png" style="width:15px;" /></a></td>
+                        <td>
+                            <a href="#" class="a">-</a>
+                            <div>100</div>
+                            <a href="#" class="a">+</a>
+                        </td>
+                        <td><span>1129.50</span></td>
+                    </tr>
+                </table>
+
+                <div class="divTotal">
+                    <h2>KUPON KODU</h2>
+                    <div class="divInput">
+                        <input type="text" placeholder="Kupon kodunu giriniz" />
+                        <a href="#" class="aButton"><img src="Images/Basket/arrow.png" />UYGULA</a>
+                        <div class="separator"></div>
+                    </div>
+                    <a href="#" class="aButton1"><span>ALIŞVERİŞE DEVAM ET</span></a>
+                    <a href="Checkout.html" class="aButton2"><span>SİPARİŞİ TAMAMLA</span></a>
+                    <div class="divTotalContent">
+                        <div>
+                            <div>
+                                <span>SİPARİŞ TUTARI</span>
+                                <span>KARGO BEDELİ</span>
+                                <span>İNDİRİMLER</span>
+                            </div>
+                            <div>
+                                <span>1.260.47</span>
+                                <span>4.99</span>
+                                <span>-10.49</span>
+                            </div>
+                            <div class="separator"></div>
+                        </div>
+                        <div>
+                            <div><span>GENEL TOPLAM</span></div>
+                            <div><span>1.820.00</span></div>
+                            <div class="separator"></div>
+                        </div>
+                    </div>
+                    <div class="separator"></div>
+                </div>
+
+            </section>
 
         </main>
-        <!-- MAIN FINISH -->
+
 
 
         <!-- FOOTER START -->
         <footer></footer>
         <!-- FOOTER FINISH -->
 
-
     </div>
     <!-- WRAPPER FINISH -->
+
+
+
 
     <!-- SCRIPTS -->
     <script type="text/javascript" src="Scripts/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="Scripts/jquery-ui.js"></script>
     <script type="text/javascript" src="Scripts/Common.js"></script>
     <script type="text/javascript" src="Scripts/MobileMenu.js"></script>
-    <script type="text/javascript" src="Scripts/Default.js"></script>
     <!-- END - SCRIPTS -->
-
 
 </body>
 </html>
