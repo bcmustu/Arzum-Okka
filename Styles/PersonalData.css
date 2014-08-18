@@ -6,6 +6,16 @@ section.personalDataPage {
 }
 
 section.personalDataPage .pageContent {
+    position: relative;
+    width: 600px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+    top: 100px;
+    bottom: 0px;
+    left: 234px;
+    background: rgba(189,177,172, 0.9);
+}
+section.loginPage .pageContent {
     position: fixed;
     width: 600px;
     padding-bottom: 50px;
@@ -13,15 +23,22 @@ section.personalDataPage .pageContent {
     right: 10%;
     background: rgba(189,177,172, 0.9);
 }
-
-section.personalDataPage .pageContent .pageTitle {
+section.signUpPage .pageContent {
+    position: fixed;
+    width: 600px;
+    padding-bottom: 50px;
+    bottom: 0px;
+    right: 10%;
+    background: rgba(189,177,172, 0.9);
+}
+section.personalDataPage .pageContent .pageTitle, section.loginPage .pageContent .pageTitle, section.signUpPage .pageContent .pageTitle {
     width: 90%;
     padding-top: 20px;
     margin: 35px auto;
     border-top:1px solid #fee5cc;
 }
 
-section.personalDataPage .pageContent .formSection {
+section.personalDataPage .pageContent .formSection, section.loginPage .pageContent .formSection, section.signUpPage .pageContent .formSection {
     width: 90%;
     padding-bottom: 20px;
     margin: 30px auto;
@@ -39,7 +56,7 @@ section.personalDataPage .pageContent .formSection {
 /* Screen */
 @media all and (max-width: 400px) {
 
-    section.personalDataPage .pageContent {
+    section.personalDataPage .pageContent, section.signUpPage .pageContent, section.loginPage .pageContent {
         width: 90%;
         padding-bottom: 50px;
         right: 0;
@@ -63,7 +80,7 @@ section.personalDataPage .pageContent .formSection {
     section.personalDataPage { 
     }
 
-    section.personalDataPage .pageContent {
+    section.personalDataPage .pageContent, section.signUpPage .pageContent, section.loginPage .pageContent {
         width: 90%;
         right: 0;
         margin: auto;
@@ -74,7 +91,7 @@ section.personalDataPage .pageContent .formSection {
         position: relative;
 }
 
-    section.personalDataPage .pageContent .formSection {
+    section.personalDataPage .pageContent .formSection, section.signUpPage .pageContent .formSection, section.loginPage .pageContent .formSection {
         width: 90%;
         height: auto;
         padding-bottom: 20px;
