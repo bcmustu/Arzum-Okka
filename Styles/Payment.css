@@ -14,7 +14,7 @@
     float:left;
     width:67%;
     margin-top: 25px;
-	background-color: #efe0d2;
+    background-color: #efe0d2;
 }
 
 #payment .tab{
@@ -38,6 +38,7 @@
     margin:auto;
     width:90%;
     padding-bottom:40px;
+    font-family: myriadpro;
 }
 
 /* ADDRESS INFO */
@@ -273,6 +274,7 @@
     color:#000;
     font-family: MyriadPro;
     font-size:14px;
+    line-height: 35px;
     font-weight:600;
     background-color:#f6f6f6;
     border-bottom:1px solid #fff;
@@ -290,7 +292,9 @@
 }
 
 #payment .divCardInfo .divContent ul li a img{
-    margin:7px auto 0 auto;
+    padding: 8px;
+    margin: auto;
+    width: 75%;
 }
 
 #payment .divCardInfo .divContent .divPayMethod {
@@ -301,7 +305,7 @@
 }
 
 #paymentCreditCard table{
-    margin:30px 0 0 0;
+    margin: 0px 0 0 0;
 }
 
 #paymentCreditCard table tr td{
@@ -328,6 +332,7 @@
     float:left;
     width:60px !important;
     background-position:85% center;
+    background-color: rgba(255,255,255,0.6);
 }
 
 #paymentCreditCard table tr td.cvc{
@@ -342,12 +347,12 @@
     padding-top:4px;
     margin-left:10px;
     width:20px;
-    height:16px;
+    height: 20px;
     color:#fff;
     font-size:13px;
     font-family:Arial;
     text-align:center;
-    background-color:#a3a3a3;
+    background-color: #000;
     border-radius:20px;
     cursor:pointer;
 }
@@ -366,7 +371,6 @@
     padding-bottom:15px;
     padding-top:15px;
     width:150px;
-    color:#cacaca;
     font-size:12px;
     font-weight:600;
     letter-spacing:1px;
@@ -375,8 +379,10 @@
 
 #paymentCreditCard .divInstalment .tableInstalment tr td{
     padding-top:13px;
-    color:#a3a3a3;
-    font-size:12px;
+    color: rgba(0,0,0,0.5);
+    font-family: myriadpro;
+    font-size: 12px;
+    font-weight: 500;
     letter-spacing:1px;
     transition:all 0.5s;
     -webkit-transition:all 0.5s;
@@ -392,13 +398,14 @@
 }
 
 #paymentCreditCard .divContract{
-    margin-top:50px;
+    margin-top: 80px;
     position:relative;
+    width: 50%;
 }
 
 #paymentCreditCard .divContract a{
     color:#000;
-    font-size: 12px;
+    font-size: 14px;
     font-family: MyriadPro;
 }
 
@@ -621,10 +628,21 @@
 .tdSeparator{
     height:12px;
 }
+/* EKİNİN EKLEDİĞİ CSS */
 
 
+.divCardInfo.tab a.buttonB{
+    float: left;
 
+    margin-top: -80px;
+    width: 200px;
+    height: 40px;
+    text-align: center;
+    line-height: 26px;
+    color: #000;
+}
 
+/* END - EKİNİN EKLEDİĞİ CSS */
 
 
 
