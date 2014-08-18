@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ﻿
 
 .paymentHeader {
@@ -33,15 +32,6 @@
     padding:20px 30px 20px 30px;
     background-color:#210001;
     color:#d0bfa9;
-=======
-﻿input, 
-select,
-select option,
-button,
-label,
-textarea{
-    font-family:'Nova';
->>>>>>> FETCH_HEAD
 }
 
 #payment .tab .divContent{
@@ -70,7 +60,6 @@ textarea{
     font-family: MyriadPro;
 }
 
-<<<<<<< HEAD
 
 #payment .divAddressInfo .divContent p.noAddress {
     font-family: MyriadPro;
@@ -83,25 +72,12 @@ textarea{
 #payment .divAddressInfo .divContent .divAddresses,
 #payment .divAddressInfo .divContent .divBillingAddresses {
     width:100%;
-=======
-/* Customized */
-.inputTextA {
-    border: 0; /*Removes border*/
-    -webkit-appearance: none; /*Removes default chrome and safari style*/
-    -moz-appearance: none; /* Removes Default Firefox style*/
-    background-color: transparent;
-    text-indent: 0.01px; /* Removes default arrow from firefox*/
-    text-overflow: ""; /*Removes default arrow from firefox*/ 
-    border-radius: 0;
-    cursor:pointer;
->>>>>>> FETCH_HEAD
 }
 
 #payment .divAddressInfo .divContent .divBillingAddresses {
     display:none;
 }
 
-<<<<<<< HEAD
 #payment .divAddressInfo .divContent .divAddress{
     width:49%;
     min-width:280px;
@@ -113,18 +89,6 @@ textarea{
     line-height:17px;
     float:left;
     cursor:pointer;
-=======
-.inputTextA {
-    display:block;
-    font-family:'Source Sans Pro';
-    width: 170px; 
-    padding:5px 10px 5px 10px;
-    color:#999;
-    font-size:12px;
-    font-weight:500;
-    letter-spacing:1px;
-    border:1px solid #ccc;
->>>>>>> FETCH_HEAD
     transition: all 0.5s;
     -webkit-transition: all 0.5s;
 }
@@ -134,7 +98,6 @@ textarea{
     margin-right:2%;
 }
 
-<<<<<<< HEAD
 #payment .divAddressInfo .divContent .divAddress:hover {
     background-color:#ddd;
 }
@@ -218,23 +181,6 @@ textarea{
 
 #payment .divAddressInfo .divContent .divOtherPersonPickUpDetails{
     display:none;
-=======
-.inputTextA::-webkit-input-placeholder { /* WebKit browsers */
-}
-.inputTextA:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-}
-.inputTextA::-moz-placeholder { /* Mozilla Firefox 19+ */
-}
-.inputTextA:-ms-input-placeholder { /* Internet Explorer 10+ */
-}
-
-
-
-
-.warningA{
-    border:1px solid #ff0000;
-    background-color:#fff;
->>>>>>> FETCH_HEAD
 }
 
 #payment .divAddressInfo .divContent .divOtherPersonPickUpDetails p {
@@ -524,7 +470,6 @@ textarea{
     color:#898989;
     line-height:20px;
 }
-<<<<<<< HEAD
 
 #paymentTransfer,
 #paymentPaypal,
@@ -570,11 +515,6 @@ textarea{
     opacity:0.5;
     cursor:pointer;
 }
-=======
-
-
-
->>>>>>> FETCH_HEAD
 
 #paymentTransfer .divLine{
     width: 100%; 
@@ -583,7 +523,6 @@ textarea{
     margin-top: 30px;
 }
 
-<<<<<<< HEAD
 #paymentTransfer select{
     float:left;
     margin-top:35px;
@@ -680,8 +619,6 @@ textarea{
     font-weight:600;
     margin-top:12px;
 }
-=======
->>>>>>> FETCH_HEAD
 
 #basketSummary table tr.total1 td:nth-child(2) span,
 #basketSummary table tr.total2 td:nth-child(2) span{
@@ -988,7 +925,6 @@ textarea{
 
     }
 
-<<<<<<< HEAD
 
 
     /* PRODUCT VE ORDER NOTES */
@@ -1009,6 +945,3 @@ textarea{
         width:1170px;
     }
 }
-=======
-}
->>>>>>> FETCH_HEAD

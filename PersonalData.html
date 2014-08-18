@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 
@@ -18,6 +19,7 @@
     <link rel="stylesheet" type="text/css" href="Styles/Header.css" />
     <link rel="stylesheet" type="text/css" href="Styles/Navi.css" />  
     <link rel="stylesheet" type="text/css" href="Styles/MobileMenu.css" />
+    <link rel="stylesheet" type="text/css" href="Styles/Form.css" />
     <link rel="stylesheet" type="text/css" href="Styles/PersonalData.css" />
 
 
@@ -210,12 +212,56 @@
                 <div class="pageContent">
 
                     <!-- PAGE TITLE START -->
-                    <div class="pageTitle faceK">PERSONAL DATA</div>
+                    <div class="pageTitle faceK">KAYIT OL</div>
                     <!-- PAGE DESCRIPTION FINISH -->
 
                     <!-- FORM SECTION START -->
-                    <div class="formSection faceL">PERSONAL DATA FORM</div>
+                    <div class="formSection faceL">
+
+                        <div class="divNewMemberContent">
+
+
+                            <div class="divMemberA">
+
+                                <input type="text" placeholder="İSİM*" class="inputTextE input" />
+                                <input type="text" placeholder="SOYİSİM*" class="inputTextE input" />
+                            </div>
+
+                            <div class="divMemberB">
+                                <input type="text" placeholder="E-POSTA ADRESİ*" class="inputTextE input" />
+                            </div>
+
+                            <div class="divMemberC">
+                                <input type="text" placeholder="ŞİFRE*" class="inputTextE input" />
+                                <input type="text" placeholder="ŞİFRE(TEKRAR)*" class="inputTextE input" />
+                                <span class="spanStyleK requiredFieldsNote">*Doldurulması zorunludur</span>
+                            </div>
+
+
+                            <div class="formSubTitle faceM">Zaten Okka Club Üyesi Misiniz?</div>
+
+
+                            <div class="alreadyAMemberOrNot">
+                                <label for="notAMemberYet" class="labelB"><input name="alreadyAMemberOrNot" type="radio" id="notAMemberYet" checked />Hayır, Daha değilim</label>
+                                <label for="alreadyAMember" class="labelB"><input name="alreadyAMemberOrNot" type="radio" id="alreadyAMember" />Üyeyim,</label>
+                                <label for="alreadyAMember" class="labelB additionalInputLabel"><input class="input innerLabel inputTextF" name="alreadyAMemberOrNot" type="text" id="alreadyAMember" />Üyelik Numaram:</label>
+                            </div>
+                            <div class="separator"></div>
+
+
+                            <div class="divMemberD">
+                                <button class="buttonB">SONRAKİ</button>
+                                <div class="separator"></div>
+                            </div>
+
+
+                            <div class="separator line"></div>
+
+                            <div class="separator"></div>
+                        </div>
+                    </div>
                     <!-- FORM SECTION FINISH -->
+
 
                 </div>
                 <!-- PAGE CONTENT FINISH -->
