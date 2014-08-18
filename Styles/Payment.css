@@ -3,6 +3,7 @@
 #payment{
     float:left;
     width:67%;
+    margin-top: 50px;
 	background-color: #fff;
 }
 
@@ -486,6 +487,7 @@
 #basketSummary{
     width:31%;
     float:right;
+    margin-top: 50px;
     border:1px solid #f2f2f2;
     background-color:#fff;
     padding-bottom:40px;
