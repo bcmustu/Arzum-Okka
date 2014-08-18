@@ -73,6 +73,31 @@ textarea{
     color: #441e15;
 }
 
+.inputTextF{
+    width: 170px;
+    height: 20px;
+    background-color: #e2cfbf;
+    border: 0px;
+    color: #441e15;
+    font-family: MyriadPro;
+    font-weight:500;
+    padding: 15px;
+    margin-bottom:5px;
+}
+
+.inputTextF::-webkit-input-placeholder { /* WebKit browsers */
+    color: #441e15;
+}
+.inputTextF:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: #441e15;
+}
+.inputTextF::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: #441e15;
+}
+.inputTextF:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color: #441e15;
+}
+
 /*BUTTON STYLE */
 .buttonB{
     background: #e2cfbf;
