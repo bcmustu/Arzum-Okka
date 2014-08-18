@@ -26,7 +26,7 @@ nav .divNav ul.level1 li {
 }
 
 nav .divNav ul.level1 li a {
-    height: 50px;
+    height: 65px;
 }
 
 
@@ -34,6 +34,13 @@ nav .divNav ul.level1 li a:hover ~ ul.level2 , nav .divNav ul.level1 li ul.level
     display: block;
     opacity: 1;
     height: auto;
+    overflow: visible;
+}
+nav .divNav ul.level1 li a.hover ~ ul.level2 , nav .divNav ul.level1 li ul.level2.hover{
+    display: block;
+    opacity: 1;
+    height: auto;
+    overflow: visible;
 }
 
 
@@ -49,6 +56,7 @@ nav .divNav ul.level1 li ul.level2 {
     opacity: 0;
     transition: opacity 0.3s, height 0s 0.3s;
     display: block;
+    overflow: hidden;
 }
 
 nav .divNav ul.level1 li ul.level2 li {
@@ -61,8 +69,11 @@ nav .divNav ul.level1 li ul.level2 li {
 nav .divNav ul.level1 li ul.level2 li:last-child {
     border-bottom: 0px;
 }
-
+nav .divNav ul.level2 li a {
+    height: 50px;
+}
 nav .divNav ul.level1 li ul.level2 li a {
+    
     padding-left: 30px;
     padding-right: 30px;
     padding-top: 20px;
@@ -71,6 +82,15 @@ nav .divNav ul.level1 li ul.level2 li a {
 }
 
 nav .divNav ul.level2 li a:hover ~ ul.level3 , nav .divNav ul.level2 li ul.level3:hover{
+    display: block;
+    opacity: 1;
+    height: auto;
+}
+nav .divNav ul.level2 li a:hover ,nav .divNav ul.level1 li a:hover ~ ul.level3 li a, ul.level3:hover li a,nav .divNav ul.level2 li:hover a {
+    background:#2b130f !important;
+}
+
+nav .divNav ul.level2 li a.hover ~ ul.level3 , nav .divNav ul.level2 li ul.level3.hover{
     display: block;
     opacity: 1;
     height: auto;
@@ -88,6 +108,7 @@ nav .divNav ul.level1 li ul.level3 {
     opacity: 0;
     transition: opacity 0.3s, height 0s 0.3s;
     display: block;
+    overflow: hidden;
 }
 
 nav .divNav ul.level1 li ul.level3 li {
@@ -100,7 +121,9 @@ nav .divNav ul.level1 li ul.level3 li {
 nav .divNav ul.level1 li ul.level3 li:last-child {
     border-bottom: 0px;
 }
-
+nav .divNav ul.level3 li a {
+    height: 50px;
+}
 nav .divNav ul.level1 li ul.level3 li a {
     padding-left: 30px;
     padding-right: 30px;
@@ -110,6 +133,14 @@ nav .divNav ul.level1 li ul.level3 li a {
 }
 
 
+nav .divNav li .listBullet {
+    position: absolute;
+    top: 22px;
+    left: 15px;
+    z-index: 2;
+    opacity: 0.5;
+    transition:all 0.2s;
+}
 
 
 header .navSeperator {
