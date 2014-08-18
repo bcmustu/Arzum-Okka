@@ -44,12 +44,12 @@ textarea{
     display:block;
     font-family:'Source Sans Pro';
     width: 170px; 
-    padding:5px 10px 5px 10px;
+    padding:10px 10px 10px 10px;
     color:#999;
     font-size:12px;
     font-weight:500;
     letter-spacing:1px;
-    border:1px solid #ccc;
+    border:1px solid #000;
     transition: all 0.5s;
     -webkit-transition: all 0.5s;
 }
