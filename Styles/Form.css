@@ -12,7 +12,7 @@ textarea{
 
 
 /* Customized */
-<<<<<<< HEAD
+
 .inputTextE{
     width: 100%;
     height: 25px;
@@ -23,7 +23,8 @@ textarea{
     font-weight:500;
     padding:20px;
     margin-bottom:5px;
-=======
+}
+
 .inputTextA {
     border: 0; /*Removes border*/
     -webkit-appearance: none; /*Removes default chrome and safari style*/
@@ -57,7 +58,6 @@ textarea{
 .inputTextA:focus  {
     color:#333;
     border:1px solid #777;
->>>>>>> FETCH_HEAD
 }
 
 .inputTextE::-webkit-input-placeholder { /* WebKit browsers */
@@ -73,7 +73,6 @@ textarea{
     color: #441e15;
 }
 
-<<<<<<< HEAD
 /*BUTTON STYLE */
 .buttonB{
     background: #e2cfbf;
@@ -93,20 +92,12 @@ textarea{
 }
 
 .buttonB:active{
-=======
-
-
->>>>>>> FETCH_HEAD
-
+}
 .warningA{
     border:1px solid #ff0000;
     background-color:#fff;
 }
-<<<<<<< HEAD
 /*END BUTTON STYLE*/
-
-=======
->>>>>>> FETCH_HEAD
 
 
 
