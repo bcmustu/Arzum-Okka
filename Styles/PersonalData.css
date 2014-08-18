@@ -46,7 +46,7 @@ span.spanOr {
 select.input {
     background-image: url(../images/@2x/icon-arrow-down-dark@2x.png);
     background-repeat: no-repeat;
-    background-position: 94%;
+    background-position: 97%;
     background-size: 15px;
     padding:0px;
     padding-left:20px;
@@ -83,7 +83,9 @@ a.contShopping {
 }
 
 
-
+div.divMemberD {
+    top:10px
+}
 /* Screen */
 @media all and (max-width: 400px) {
 
