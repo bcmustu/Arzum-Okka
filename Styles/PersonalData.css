@@ -38,7 +38,6 @@ a.signUp, a.forgotPassword {
 
 span.spanOr {
     margin: 20px 0px;
-
     text-align: center;
     width: 100%;
 }
@@ -86,6 +85,36 @@ a.contShopping {
 div.divMemberD {
     top:10px
 }
+
+span.requiredFieldsNote {
+    float:right;
+    line-height: 14px;
+}
+
+.divNewMemberContent div.formSubTitle {
+    margin-top: 40px;
+}
+
+div.alreadyAMemberOrNot {
+    width: 300px; margin-left: 50px;
+
+    margin-top: 30px;
+}
+
+div.alreadyAMemberOrNot label {
+    width: 300px;
+    
+    margin-top: -5px;
+    font-weight: 400;
+    letter-spacing: 0.001em;
+}
+
+input[type="text"].input.innerLabel {
+    float: right;
+    
+}
+
+
 /* Screen */
 @media all and (max-width: 400px) {
 
@@ -97,7 +126,6 @@ div.divMemberD {
         margin: 0 auto;
         margin-top: 50%;
         background: rgba(189,177,172, 0.9);
-    
         position: relative;
         min-height: 100%;
 }
@@ -120,7 +148,6 @@ div.divMemberD {
         height: auto !important;
         margin-top: 20%;
         background: rgba(189,177,172, 0.9);
-    
         position: relative;
 }
 

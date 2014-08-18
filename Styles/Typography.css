@@ -134,6 +134,12 @@ a:active {
     font-weight: 500;
 }
 
+.faceM {
+    font-family: MyriadPro;
+    color: #441e15;
+    font-size: 20px;
+    font-weight: 400;
+}
 
 
 
@@ -188,12 +194,6 @@ a:active {
     font-size: 11px;
     font-weight: 400;
     display: block;
-}
-
-.aStyleJ:hover,
-.aStyleJ:active {
-    color: #d9d9d9;
-    text-decoration: none;
 }
 
 .aStyleE:link,
