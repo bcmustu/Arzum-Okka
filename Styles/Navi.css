@@ -73,8 +73,10 @@ nav .divNav ul.level1 li ul.level2 li a {
 header .navSeperator {
     width: 750px;
     height: 2px;
-    top: 20px;
+    top: 0px;
     background: url(../Images/divider-nav.png) repeat-y;
+    margin: 0 auto;
+    left: 130px;
 }
 
 
@@ -116,6 +118,8 @@ header .navSeperator {
     header .navSeperator {
         width: 100% !important;
         height: 2px;
+        left: 0px;
+        margin-left: 0px;
         top: 38px !important;
         background: url(../Images/divider-nav.png) repeat-y center center !important;
     }
@@ -149,11 +153,11 @@ header .navSeperator {
         height: 2px;
         position: relative;
         width: 100%;
+        left: 25px;
         top: -51px;
-        margin: auto;
+        margin: 0 auto;
         background: url(../Images/divider-nav.png) repeat-y;
-    
-        background-position-x: 120%;
+        width: 750px;
 }
 
 
