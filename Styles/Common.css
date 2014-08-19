@@ -114,6 +114,19 @@ main {
        background-color: #411c13;
        margin: auto;
     }
+    
+    #wrapper-data-page {
+       max-width: 1280px;
+       min-height: 100%;
+       position: absolute;
+       right: 0;
+       left: 0px;
+       background: url(../Files/Pages/DataPage/Pictures/background.jpg) no-repeat;
+       background-attachment: fixed;
+       background-size: cover;
+       margin: auto;
+       overflow: scroll;
+    }
 
 }
 
