@@ -1,327 +1,39 @@
-﻿input, 
-select,
-select option,
-button,
-label,
-textarea{
-    font-family:'Nova';
-    font-family: myriadpro;
+﻿
+
+header {
+    padding-bottom: 30px;
+    background: rgba(24,5,3,0.9);
 }
 
-
-
-
-
-/* Customized */
-
-.inputTextE{
-    width: 100%;
-    height: 25px;
-    background-color: #e2cfbf;
-    border: 0px;
-    color: #441e15;
-    font-family: MyriadPro;
-    font-weight:500;
-    padding:20px;
-    margin-bottom:5px;
+section.staticPage {
+    position: relative;
 }
 
-.inputTextA {
-    border: 0; /*Removes border*/
-    -webkit-appearance: none; /*Removes default chrome and safari style*/
-    -moz-appearance: none; /* Removes Default Firefox style*/
-    background-color: transparent;
-    text-indent: 0.01px; /* Removes default arrow from firefox*/
-    text-overflow: ""; /*Removes default arrow from firefox*/ 
-    border-radius: 0;
-    cursor:pointer;
+section.staticPage .pageContent {
+    width: 500px;
+    min-height: 425px;
+    margin-top: 20%;
+    left: 50%;
+    background: #411c13;
 }
 
-.inputTextA::-ms-expand {
-    display: none;
+section.staticPage .pageContent .pageTitle {
+    width: 90%;
+    padding-top: 20px;
+    float: left;
+    margin: 30px auto;
+    margin-left: 5%;
+    border-top:1px solid #fee5cc;
+    line-height: 30px;
 }
 
-.inputTextA {
-    display:block;
-    font-family:'Source Sans Pro';
-    width: 170px; 
-    padding:10px 10px 10px 10px;
-    color:#999;
-    font-size:12px;
-    font-weight:500;
-    letter-spacing:1px;
-    border:1px solid #000;
-    transition: all 0.5s;
-    -webkit-transition: all 0.5s;
+section.staticPage .pageContent .pageDescription {
+    width: 90%;
+    height: auto;
+    padding-bottom: 20px;
+    margin: 30px auto;
+    text-align: justify;
 }
-
-.inputTextA:hover,
-.inputTextA:focus  {
-    color:#333;
-    border:1px solid #777;
-}
-
-.inputTextE::-webkit-input-placeholder { /* WebKit browsers */
-    color: #441e15;
-}
-.inputTextE:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-    color: #441e15;
-}
-.inputTextE::-moz-placeholder { /* Mozilla Firefox 19+ */
-    color: #441e15;
-}
-.inputTextE:-ms-input-placeholder { /* Internet Explorer 10+ */
-    color: #441e15;
-}
-
-.inputTextF{
-    width: 170px;
-    height: 20px;
-    background-color: #e2cfbf;
-    border: 0px;
-    color: #441e15;
-    font-family: MyriadPro;
-    font-weight:500;
-    padding: 15px;
-    margin-bottom:5px;
-}
-
-.inputTextF::-webkit-input-placeholder { /* WebKit browsers */
-    color: #441e15;
-}
-.inputTextF:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-    color: #441e15;
-}
-.inputTextF::-moz-placeholder { /* Mozilla Firefox 19+ */
-    color: #441e15;
-}
-.inputTextF:-ms-input-placeholder { /* Internet Explorer 10+ */
-    color: #441e15;
-}
-
-/*BUTTON STYLE */
-.buttonB{
-    background: #e2cfbf;
-    border: 0;
-    font-family: myriadPro;
-    padding: 5px 20px;
-    padding-top: 9px;
-    font-weight: 500;
-    float: right;
-    margin-top: 15px;
-    z-index: 2;
-    cursor: pointer;
-}
-
-.buttonB:hover{
-
-}
-
-.buttonB:active{
-}
-.warningA{
-    border:1px solid #ff0000;
-    background-color:#fff;
-}
-/*END BUTTON STYLE*/
-
-
-
-
-.selectStyleA{
-    display:block;
-    background-image: url('../Images/icon-arrow-down-dark.png');
-    background-size: 10px;
-    background-repeat:no-repeat;
-    background-position:95% center;
-    font-family:'Source Sans Pro';
-    width: 300px !important;
-    padding:5px 0 5px 10px;
-    color: #000;
-    font-size:12px;
-    font-weight:500;
-    letter-spacing:1px;
-    border: 1px solid #000;
-    transition: all 0.5s;
-    -webkit-transition: all 0.5s;
-}
-
-.selectStyleA:hover,
-.selectStyleA:focus  {
-    color:#333;
-    border:1px solid #777;
-}
-
-
-
-
-
-.selectStyleB{
-}
-
-.selectStyleB option{
-}
-
-
-
-
-
-
-.textareaStyleA {
-    display:block;
-    font-family:'Source Sans Pro';
-    width:350px; 
-    height:60px;
-    padding:5px 10px 5px 10px;
-    color:#999;
-    font-size:12px;
-    font-weight:500;
-    letter-spacing:1px;
-    border:1px solid #ccc;
-    transition: all 0.5s;
-    -webkit-transition: all 0.5s;
-}
-
-.textareaStyleA:hover,
-.textareaStyleA:focus  {
-    color:#333;
-    border:1px solid #777;
-}
-
-
-
-
-
-.textareaStyleB{
-
-}
-
-
-
-
-
-
-.labelStyleA{
-}
-
-.labelStyleB{
-}
-/* LABELS STYLE */
-
-.labelA {
-    display: inline-block;
-    height: 38px;
-    font-size: 12px;
-    font-weight: 500;
-    line-height: 21px;
-    letter-spacing: 0.040em;
-    transition: all 0.2s;
-}
-
-    .labelA:hover:after {
-        opacity: 1;
-    }
-
-.labelA a {
-    font-family:myriadpro;
-    display: inline-block;
-    color:#000;
-}
-
-.labelB {
-    font-family: myriadPro;
-    display: inline-block;
-    height: 38px;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 21px;
-    letter-spacing: 0.010em;
-    transition: all 0.2s;
-}
-
-
-.labelC {
-    padding:0 5px 0 60px;
-    height: 50px;
-    font-size: 12px;
-    line-height: 15px;
-    letter-spacing: 0.030em;
-}
-
-    .labelC:after {
-        top: 7px;
-        left: 31px;
-    }
-
-/* END - LABELS STYLE */
-
-/* CHECKBOX STYLE */
-input[type="checkbox"] {
-    display: inline-block;
-    top: 5px;
-    margin-right: 10px;
-    width: 15px;
-    height: 15px;
-    border: 2px solid #000;
-    transition: none;
-    cursor: pointer;
-}
-
-input[type="checkbox"].checkboxTypeA {
-    width: 12px;
-    height: 12px;
-    top: 5px;
-}
-
-    input[type="checkbox"]:checked {
-        background: url(../images/checkbox.png) no-repeat center;
-        background-size: 50%;
-    }
-
-
-/* END CHECKBOX STYLE */
-
-
-/* RADIO STYLE */
-
-input[type="radio"] {
-    display: inline-block;
-    top: 4px;
-    margin-right: 10px;
-    width: 12px;
-    height: 12px;
-    border: 2px solid #441e15;
-    border-radius:50%;
-    transition:none;
-    cursor: pointer;
-}
-
-    input[type="radio"]:checked {
-        background: #441e15;
-        background-size: 60%;
-    }
-
-input[type="radio"].radioTypeA {
-    height: 12px;
-    width: 12px;
-    top: 2px;
-}
-
-/* END - RADIO STYLE */
-
-/*BLACK BUTTON STYLE */
-.buttonA{
-}
-
-.buttonA:hover{
-
-}
-
-.buttonA:active{
-
-}
-/*END BLACK BUTTON STYLE*/
-
 
 
 
@@ -331,23 +43,94 @@ input[type="radio"].radioTypeA {
 /* Screen */
 @media all and (max-width: 400px) {
 
+    header {
+        width: 100%;
+        height: 80px;
+        padding-bottom: 30px;
+        background: rgba(33,0,0,1);
+    
+        position: absolute;
+        top: 0px;
+}
+
+    section.staticPage .pageContent {
+        position: relative;
+        width: 100%;
+        padding-top: 1px;
+        padding-bottom: 1px;
+        height: auto;
+        bottom: 0px;
+        left: 0;
+        background: #411c13;
+    }
+
+    section.staticPage .pageContent .pageDescription {
+        width: 90%;
+        padding-bottom: 20px;
+        margin: 30px auto;
+        border-bottom:1px solid #fee5cc;
+        text-align: justify;
+    
+        overflow: auto;
+        height: auto;
+}
+    section.staticPage {
+        margin-top: 75%;
+        position: absolute;
+    }
+    .staticPageNav ~ .navSeperator {
+        display: none;
+    }
+
+    .level1 .subnav {
+        display: none;
+    }
+
 }
 
 @media all and (min-width: 401px) and (max-width: 700px) {
-
+    .level1 .subnav {
+        display: none;
+    }
 }
 
 @media all and (min-width: 701px) and (max-width: 1018px) {
 
+    header {
+        height: 215px;
+        padding-bottom: 30px;
+        background: rgba(33,0,0,1);
+    }
+
+    section.staticPage .pageContent {
+        position: absolute;
+        width: 100%;
+        height: auto;
+        bottom: auto;
+        left: 0;
+        background: #411c13;
+    }
+
+    section.staticPage {
+        margin-top: 20%;
+        position: relative;
+    }
+
 }
 
-@media all and (min-width: 1019px) and (max-width: 1275px) {
+@media all and (min-width: 1019px) and (max-width: 1274px) {
+    header .navSeperator {
+        width: 750px;
+        height: 50px;
+        top: 101px;
+        right: 88px;
+        background: url(../Images/divider-nav.png) no-repeat;
+    
+        position: absolute;
+}
 
 }
 
-@media all and (min-width: 1276px) {
+@media all and (min-width: 1275px) {
 
 }
-
-
-
