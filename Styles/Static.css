@@ -161,6 +161,16 @@ main {
         position: absolute;
 }
 
+    .staticContentWrapper {
+        width: 960px;
+        margin: 0 auto;
+        display: inline-block;
+        min-height: 400px;
+        left: auto;
+        text-align: left;
+        margin-top: calc(734px - 625px);
+    }
+
 }
 
 @media all and (min-width: 1275px) {

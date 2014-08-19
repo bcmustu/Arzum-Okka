@@ -81,9 +81,7 @@ img[data-sixtythree="icon-arrow-nav"] {
 }
 
 img[data-sixtythree="icon-mobile-nav"] {
-    width: 69px;
-    height: 65px;
-    padding: 25px 25px 25px 25px;
+    width: 16px !important;
     box-sizing: border-box;
 }
 
