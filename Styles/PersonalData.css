@@ -12,7 +12,7 @@ section.personalDataPage .pageContent {
     padding-bottom: 50px;
     top: 100px;
     bottom: 0px;
-    left: 234px;
+    left: 120px;
     background: rgba(189,177,172, 0.9);
 }
 section.loginPage .pageContent {
@@ -146,14 +146,22 @@ div.alreadyAMemberOrNot label.additionalInputLabel {
     section.personalDataPage .pageContent, section.signUpPage .pageContent, section.loginPage .pageContent {
         width: 90%;
         padding-bottom: 50px;
-        right: 0;
+        left: 0;
         top: 50%;
         margin: 0 auto;
         margin-top: 50%;
         background: rgba(189,177,172, 0.9);
         position: relative;
         min-height: 100%;
-}
+        
+    }
+
+    div.alreadyAMemberOrNot label.additionalInputLabel {
+        position:relative;
+        right: 0px;
+        bottom: -15px;
+        left:-35px
+    }
 
 }
 
@@ -168,7 +176,7 @@ div.alreadyAMemberOrNot label.additionalInputLabel {
 
     section.personalDataPage .pageContent, section.signUpPage .pageContent, section.loginPage .pageContent {
         width: 90%;
-        right: 0;
+        left: 0;
         margin: auto;
         height: auto !important;
         margin-top: 20%;

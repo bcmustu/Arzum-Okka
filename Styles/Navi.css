@@ -144,12 +144,12 @@ nav .divNav li .listBullet {
 
 
 header .navSeperator {
-    width: 750px;
+    width: 100%;
     height: 2px;
     top: 0px;
     background: url(../Images/divider-nav.png) repeat-y;
+    background-position-x: 86%;
     margin: 0 auto;
-    left: 240px;
 }
 
 
@@ -226,12 +226,12 @@ header .navSeperator {
         height: 2px;
         position: relative;
         width: 100%;
-        left: 25px;
         top: -51px;
+        left: 0px;
         margin: 0 auto;
-        background: url(../Images/divider-nav.png) repeat-y;
+        background: url(../Images/divider-nav.png) no-repeat;
         width: 750px;
-}
+    }
 
 
 }
@@ -255,5 +255,14 @@ header .navSeperator {
         position:absolute;
         right:30px;
     }
+
+header .navSeperator {
+    width: 100%;
+    height: 2px;
+    top: 0px;
+    background: url(../Images/divider-nav.png) repeat-y;
+    background-position-x: 96%;
+    margin: 0 auto;
+}
 
 }
