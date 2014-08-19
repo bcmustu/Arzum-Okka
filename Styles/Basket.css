@@ -2,7 +2,8 @@
 #basket{
     margin:auto;
     width:1170px;
-    background-color:#fff;
+    margin-top: 25px;
+    background-color:#efe0d2;
 }
 
 #basket table{
