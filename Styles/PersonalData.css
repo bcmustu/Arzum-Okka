@@ -179,9 +179,20 @@ div.alreadyAMemberOrNot label.additionalInputLabel {
         left: 0;
         margin: auto;
         height: auto !important;
-        margin-top: 20%;
+        margin-top: 56%;
         background: rgba(189,177,172, 0.9);
         position: relative;
+}
+    section.personalDataPage .pageContent{
+    margin-top: calc(20.4% - 110px);
+
+}
+    section.signUpPage .pageContent{
+    margin-top: calc(43.6% - 110px);
+
+}
+    section.loginPage .pageContent{
+    margin-top: calc(57.3% - 110px);
 }
 
     section.personalDataPage .pageContent .formSection, section.signUpPage .pageContent .formSection, section.loginPage .pageContent .formSection {

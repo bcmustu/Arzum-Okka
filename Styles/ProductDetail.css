@@ -37,6 +37,24 @@ section.productDetail .productDetailDescription .detailHead {
     padding: 0px 15px 20px 15px; 
 }
 
+section.productDetail .productDetailDescription .detailHead select {
+    float:right;
+    width: 146px !important;
+    margin-right: 10px;
+    font-family: myriadpro;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 40px;
+    background-color: transparent;
+    color: #e0ba8f;
+    background-image: url('../Images/icon-arrow-down.png'); background-size: 10px; background-repeat: no-repeat; 
+    background-position: 86% center;
+    height: 47px;
+    padding-left: 28px;
+    top: 2px;
+    border: 1px solid;
+}
+
 section.productDetail .productDetailDescription .detailHead h1.productTitle {
     float: left;
     margin-top: 20px;
@@ -381,7 +399,7 @@ section.productDetail .productDetailDescription .technicalImages img {
 
     section.productDetail .productDetailDescription {
         width: 100%;
-        margin-top: 0px;
+        margin-top: -70px;
         margin-left: 28px;
         background: transparent;
     }

@@ -549,17 +549,17 @@
     width:31%;
     float:right;
     margin-top: 25px;
-    background-color:#fff;
+    background-color: #efe0d2;
     padding-bottom:40px;
     font-family: MyriadPro;
 }
 
 #basketSummary h3{
     font-size:14px;
-    color:#340d08;
+    color: #d0bfa9;
     font-weight:400;
     letter-spacing:1px;
-    background-color:#d0bfa9;
+    background-color: #210001;
     padding:21px 30px 21px 30px;
 }
 
@@ -588,6 +588,10 @@
 
 #basketSummary table tr td:nth-child(1){
     width:75px;
+}
+
+#basketSummary table tr td img {
+    border:1px solid #bdaf9d;
 }
 
 #basketSummary table tr td h4{
@@ -816,6 +820,11 @@
         font-size:11px !important;
         line-height:18px !important;
     }
+    #paymentTransfer .divBank{
+        width: 289px;
+        float:left;
+        margin: 20px 0 30px 0;
+    }
 }
 
 @media all and (min-width: 401px) and (max-width: 700px) {
@@ -937,7 +946,18 @@
         line-height:18px !important;
     }
 
-   
+
+    #paymentTransfer .divBank{
+        width: 289px;
+        float:left;
+        margin: 20px 0 30px 0;
+    }
+    #paymentTransfer select {
+        margin-top: 75px;
+    }
+    #paymentTransfer .divContract {
+        margin-top: 30px;
+    }
 }
 
 @media all and (min-width: 701px) and (max-width: 1018px) {
@@ -959,7 +979,17 @@
 
     }
 
-
+    #paymentTransfer .divBank{
+        width: 289px;
+        float:left;
+        margin: 20px 0 30px 0;
+    }
+    #paymentTransfer select {
+        margin-top: 75px;
+    }
+    #paymentTransfer .divContract {
+        margin-top: 30px;
+    }
 
     /* PRODUCT VE ORDER NOTES */
     #payment .divGiftInfo .divContent .divGift:nth-child(2){
