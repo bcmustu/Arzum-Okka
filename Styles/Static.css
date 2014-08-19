@@ -4,20 +4,42 @@ header {
     padding-bottom: 30px;
     background: rgba(24,5,3,0.9);
 }
-
+main {
+    text-align: center;
+}
 .staticContentWrapper {
     width:960px;
     margin: 0 auto;
     display: inline-block;
+    min-height: 400px;
     text-align: left;
     left: 100px;
+    margin-top: calc(100vh - 627px);
 }
 
 .staticContentMainImage {
-    
+    width: 460px;
+    float: left;
 }
 
+    .staticContentMainImage img {
+        width: 100%;
+    }
 
+.staticContentWording {
+    width:500px;
+    min-height: 490px;
+    float: left;
+    padding: 30px 20px;
+    background: rgba(65,28,19,1);
+}
+
+    .staticContentWording .pageTitle {
+        padding-top:20px;
+        border-top:1px solid #fee5cc;
+        margin-bottom:20px;
+        line-height:30px;
+    }
 
 /* Screen */
 @media all and (max-width: 400px) {
