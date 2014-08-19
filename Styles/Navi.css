@@ -13,7 +13,7 @@ nav .divNav{
 
 nav .divNav ul.level1 {
     width: 700px;
-    height: 34px;
+    height: 57px;
     text-align: center;
     margin: auto;
 }
@@ -26,7 +26,15 @@ nav .divNav ul.level1 li {
 }
 
 nav .divNav ul.level1 li a {
-    height: 65px;
+    height:65px;
+}
+
+nav .divNav ul.level2 li a {
+    height:auto;
+}
+
+nav .divNav ul.level3 li a {
+    height:auto;
 }
 
 
@@ -70,7 +78,6 @@ nav .divNav ul.level1 li ul.level2 li:last-child {
     border-bottom: 0px;
 }
 nav .divNav ul.level2 li a {
-    height: 50px;
 }
 nav .divNav ul.level1 li ul.level2 li a {
     
