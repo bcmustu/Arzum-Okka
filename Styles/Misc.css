@@ -87,6 +87,13 @@ img[data-sixtythree="icon-mobile-nav"] {
     box-sizing: border-box;
 }
 
+
+img[data-sixtythree="icon-arrow-next-dark"]{
+    width: 10px !important;
+    height: 20px !important;
+    box-sizing: border-box;
+}
+
 /* SOCIAL MEDIA ICONS STYLES */
 img[data-sixtythree^="icon-social-"] {
     display: block;
