@@ -43,14 +43,101 @@ section.personalDataPage .pageContent .formSection, section.loginPage .pageConte
     padding-bottom: 20px;
     margin: 30px auto;
     text-align: justify;
-    background: #fff;
 }
 
 
+a.signUp, a.forgotPassword {
+    margin-top: 11px;
+    transition: all 0.3s;
+    margin-left: 20px;
+    width: 200px;
+}
+
+span.spanOr {
+    margin: 20px 0px;
+    text-align: center;
+    width: 100%;
+}
+
+select.input {
+    background-image: url(../images/@2x/icon-arrow-down-dark@2x.png);
+    background-repeat: no-repeat;
+    background-position: 97%;
+    background-size: 15px;
+    padding:0px;
+    padding-left:20px;
+    height:40px;
+}
 
 
+div.divSocialIcons a.aSocialIcon {
+    float: left;
+    width: 170px;
+    height: 35px;
+    margin: 5px;
+    text-align: center;
+    border: 1px solid #e2cfbf;
+    transition:all 0.3s;
+    text-align: left;
+}
+div.divSocialIcons a.aSocialIcon:hover {
+    background-color: #e2cfbf;
+}
+div.divSocialIcons a.aSocialIcon img {
+    height: 15px;
+    margin: 0 auto;
+    float: left;
+    margin-top: 9px;
+    margin-left: 15px;
+    margin-right: 13px;
+}
 
 
+a.contShopping {
+    text-decoration: underline !important;
+    margin-top: 5px;
+}
+
+
+div.divMemberD {
+    top:10px
+}
+
+span.requiredFieldsNote {
+    float:right;
+    line-height: 14px;
+}
+
+.divNewMemberContent div.formSubTitle {
+    margin-top: 40px;
+}
+
+div.alreadyAMemberOrNot {
+    width: 300px; margin-left: 50px;
+
+    margin-top: 30px;
+}
+
+div.alreadyAMemberOrNot label {
+    width: 300px;
+    
+    height: 30px;
+    margin-top: -5px;
+    font-weight: 400;
+    letter-spacing: 0.001em;
+}
+
+input[type="text"].input.innerLabel {
+    float: right;
+    top: -5px;
+}
+
+div.alreadyAMemberOrNot label.additionalInputLabel {
+    position: absolute;
+
+    right: -83px;
+    bottom: -5px;
+}
 
 
 /* Screen */
@@ -64,7 +151,6 @@ section.personalDataPage .pageContent .formSection, section.loginPage .pageConte
         margin: 0 auto;
         margin-top: 50%;
         background: rgba(189,177,172, 0.9);
-    
         position: relative;
         min-height: 100%;
 }
@@ -87,7 +173,6 @@ section.personalDataPage .pageContent .formSection, section.loginPage .pageConte
         height: auto !important;
         margin-top: 20%;
         background: rgba(189,177,172, 0.9);
-    
         position: relative;
 }
 
@@ -101,6 +186,7 @@ section.personalDataPage .pageContent .formSection, section.loginPage .pageConte
         overflow: auto;
     }
 
+
 }
 
 @media all and (min-width: 1019px) and (max-width: 1274px) {
@@ -110,25 +196,3 @@ section.personalDataPage .pageContent .formSection, section.loginPage .pageConte
 @media all and (min-width: 1275px) {
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
