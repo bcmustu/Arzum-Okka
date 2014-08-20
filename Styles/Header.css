@@ -107,6 +107,7 @@ header .divContent a img {
         position: absolute;
         left: 60px;
         width: 146px;
+        z-index: 9;
         height: 65px;
     }
 
