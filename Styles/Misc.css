@@ -519,6 +519,17 @@ img[data-sixtythree="logotype-white"] {
 
 /* Screen */
 @media all and (max-width: 400px) {
+
+
+    img[data-sixtythree="icon-user"] {
+        width: 18px !important;
+        height: 18px !important;
+    }
+
+    img[data-sixtythree="icon-basket"] {
+        width: 18px !important;
+        height: 18px !important;
+    }
     header nav img[data-sixtythree="icon-search"] {
         width: 15px;
         height: 15px;
