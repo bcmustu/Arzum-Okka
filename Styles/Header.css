@@ -21,9 +21,42 @@ header .divContent a img {
     height: 65px;
 }
 
+.accountAndBasket{
+    position: absolute;
 
+    display: flex;
+    left: 50%;
+    align-items: center;
+    margin-left: 398px;
+    top: 125px;
+}
 
+.accountAndBasket a:last-child{
 
+}
+
+.accountAndBasket a{
+
+    display: flex; align-items: center;
+    
+
+    margin-right: 20px;
+
+}
+
+.accountAndBasket a span.accountAndBasketWording {
+    float: left;
+
+    font-family: myriadpro;
+    font-size: 12px;
+    color: #a67861;
+}
+
+.accountAndBasket a img {
+    float: left;
+    
+    margin-right: 8px;
+}
 
 
 
