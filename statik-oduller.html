@@ -14,6 +14,7 @@
     <link rel="stylesheet" type="text/css" href="Styles/Reset.css" />
     <link rel="stylesheet" type="text/css" href="Styles/Fonts.css" />
     <link rel="stylesheet" type="text/css" href="Styles/Typography.css" />
+    <link rel="stylesheet" type="text/css" href="Styles/Misc.css" />
     <link rel="stylesheet" type="text/css" href="Styles/Common.css" />
     <link rel="stylesheet" type="text/css" href="Styles/Header.css" />
     <link rel="stylesheet" type="text/css" href="Styles/Navi.css" />
@@ -25,13 +26,14 @@
 </head>
 <body>
 
-    <!-- WRAPPER START -->
-    <div id="wrapper-photo" class="wrapper">
-
 
         <!-- HEADER START -->
         <header>
             <div class="divContent staticPageNav">
+                <div class="accountAndBasket">
+                    <a href="login.html"><img data-sixtythree="icon-user" /><span class="accountAndBasketWording">HESABIM</span></a>
+                    <a href="basket.html"><img data-sixtythree="icon-basket" /><span class="accountAndBasketWording">SEPETİM</span></a>
+                </div>
 
                 <!-- LOGOTYPE START -->
                 <a href="default.html" class="aLogo"><img data-sixtythree="logotype" /></a>
@@ -225,7 +227,7 @@
 
 
         <!-- MAIN START -->
-        <main>
+        <main id="wrapper-photo">
 
             <div class="staticContentWrapper">
                 <!-- STATIC CONTENT MAIN IMAGE -->
@@ -287,9 +289,6 @@
         <footer></footer>
         <!-- FOOTER FINISH -->
 
-
-    </div>
-    <!-- WRAPPER FINISH -->
 
     <!-- SCRIPTS -->
     <script type="text/javascript" src="Scripts/jquery-1.11.0.min.js"></script>
