@@ -100,7 +100,7 @@ header .divContent a img {
         -o-align-items: center;
         align-items: center;
         margin-left: 88px;
-        top: 35px;
+        top: 31px;
     
         z-index: 99999999999999999999;
 }
@@ -122,7 +122,7 @@ header .divContent a img {
         -ms-align-items: center;
         -o-align-items: center;
         align-items: center;
-        margin-right: 15px;
+        margin-right: 12px;
     }
     .accountAndBasket a:hover{
         opacity:1;
