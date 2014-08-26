@@ -21,7 +21,7 @@ function colorSelect() {
 	var colorlessSampleSource = sample.attr('src')
 	var baseSource = colorlessSampleSource.substr(0,colorlessSampleSource.lastIndexOf('.'));
 	var fileType = colorlessSampleSource.substr(colorlessSampleSource.lastIndexOf('.'));
-	sample.attr('src',baseSource+'-'+selectedColor+fileType);
+	sample.attr('src',baseSource+selectedColor+fileType);
 	sample.css('transition','all 0.7s');
 
 	$('.productDetail .productImageColorPalette .productColorSample').click(function(){
@@ -93,10 +93,10 @@ function articleMaxiSlider(isOrientationChange) {
     var ratio = 0.85;
     var captionH = (deviceIs == "tablet") ? parseInt($('#articleMaxiSlider .divCaptionContainer').css('height')) : 0;
     var gapValForCaption = (deviceIs == "tablet") ? parseInt($('#articleMaxiSlider .divCaptionContainer').css('marginTop')) : 0;
-    var gapValForScreen = parseInt(wH * (1 - ratio) / 2);
+    var gapValForScreen = parseInt(wH * (1 - ratio) / 5);
     var sliderH = wH * ratio;
     var sliderW = wW - (gapValForScreen * 2);
-    var sponsorHeight = $('.sponsor').height() + 140;
+    var sponsorHeight = 0;
 
 
     // disable touchmove and allow the touch for divCaptionContainer
