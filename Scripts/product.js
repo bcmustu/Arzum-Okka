@@ -1,6 +1,19 @@
 $(document).ready(function(){
 	colorSelect();
+    articleMaxiSliderCloseSetup();
 });
+
+
+$(window).load(function(){
+    //Extracting Url hash, opening fullscreen slider, and defining the opening slide number
+        slideNoToInitiate = parseInt((window.location.hash).substring(1));
+        if (slideNoToInitiate >= 0) {
+            setupArticleMaxiSlider(slideNoToInitiate);
+        };
+    //
+});
+
+
 
 function colorSelect() {
 	var selectedColor = 'white'
@@ -22,3 +35,141 @@ function colorSelect() {
 		},700);
 	})
 }
+
+$(window).on("orientationchange", function (event) {
+    // maxiSlider quick actions like hide / show
+    articleMaxiSliderQuickChanges();
+
+    // orientationchange is triggered right after the action. So, wait a bit to get correct values like wH and wW
+    var timer = null;
+
+    if (timer != null) {
+        clearTimeout(timer);
+    }
+
+    timer = setTimeout(function () {
+        articleMaxiSlider(true);
+    }, 500);
+});
+
+
+
+// Triggers maxi slider in overlay
+var maxiArticleSlider = null;
+var initialSliderHtml = null;
+var slideNoToInitiate = 0;
+
+// called by mini slider on page
+function setupArticleMaxiSlider(slideNo) {
+    slideNoToInitiate = slideNo;
+    articleMaxiSlider(false);
+
+    $('#articleMaxiSlider').css({ opacity: 0 }).show();
+    $('.divOverlay').stop(true, false).fadeIn(function () {
+        $('#articleMaxiSlider').stop(true, false).animate({ opacity: 1 });
+    });
+}
+// End
+
+// reset slider quickly if orientation change
+function articleMaxiSliderQuickChanges() {
+    $('#articleMaxiSlider').hide();
+    maxiArticleSlider.destroy();
+    $('#articleMaxiSlider').empty().html(initialSliderHtml);
+}
+// End
+
+function articleMaxiSlider(isOrientationChange) {
+    // save slider html for orientation change which resets the slider
+    if (initialSliderHtml == null) {
+        initialSliderHtml = $('#articleMaxiSlider').html();
+    }
+
+    if (isOrientationChange) {
+        $('#articleMaxiSlider').show();
+    }
+
+    // slider layout values
+    var ratio = 0.85;
+    var captionH = (deviceIs == "tablet") ? parseInt($('#articleMaxiSlider .divCaptionContainer').css('height')) : 0;
+    var gapValForCaption = (deviceIs == "tablet") ? parseInt($('#articleMaxiSlider .divCaptionContainer').css('marginTop')) : 0;
+    var gapValForScreen = parseInt(wH * (1 - ratio) / 2);
+    var sliderH = wH * ratio;
+    var sliderW = wW - (gapValForScreen * 2);
+    var sponsorHeight = $('.sponsor').height() + 140;
+
+
+    // disable touchmove and allow the touch for divCaptionContainer
+    $('body').bind('touchmove', function (e) {
+        $('#articleMaxiSlider .divCaptionContainer div').bind("touchmove", function (e) {
+            e.stopPropagation();
+        });
+
+        e.preventDefault();
+    });
+
+
+    // set slider dynamic style
+    $('#articleMaxiSlider').css({
+        height: sliderH,
+        width: sliderW,
+        marginTop: gapValForScreen*1.85,
+        marginLeft: gapValForScreen
+    });
+
+    // set table dynamic style
+    $('#articleMaxiSlider table').css({
+        height: sliderH
+    });
+
+    // set image container dynamic style
+    $('#articleMaxiSlider .divImgContainer').css({
+        height: (isLandscape) ? (sliderH - captionH - gapValForCaption - sponsorHeight/4) : 'auto'
+    });
+
+    // trigger slider
+    $('#articleMaxiSlider').royalSlider({
+        autoHeight: (isLandscape) ? true : false,
+        autoWidth: (isPortrait) ? true : false,
+        arrowsNav: false,
+        fadeinLoadedSlide: false,
+        slidesSpacing: 0,
+        controlNavigationSpacing: 0,
+        controlNavigation: 'none',
+        imageScaleMode: 'none',
+        imageScalePadding: 0,
+        imageAlignCenter: false,
+        loop: false,
+        loopRewind: false,
+        numImagesToPreload: 1,
+        keyboardNavEnabled: true,
+        usePreloader: true,
+        startSlideId: slideNoToInitiate
+    });
+
+    maxiArticleSlider = $("#articleMaxiSlider").data('royalSlider');
+
+
+    currentSlide = maxiArticleSlider.currSlideId;
+    history.pushState({}, '', 'urun-makina.html#'+currentSlide);
+
+    maxiArticleSlider.ev.on('rsAfterSlideChange', function (event) {
+        slideNoToInitiate = maxiArticleSlider.currSlideId;
+        currentSlide = maxiArticleSlider.currSlideId;
+        history.pushState({}, '', 'urun-makina.html#'+currentSlide);
+    });
+}
+// End
+
+// close article maxi slider setup which uses touchstart instead of click
+function articleMaxiSliderCloseSetup() {
+    $('.divOverlay div.close').on("touchstart", function (ev) {
+        $('.divOverlay').stop(true, false).fadeOut(function () {
+            slideNoToInitiate = 0;
+            articleMaxiSliderQuickChanges();
+            $('body').unbind('touchmove');
+            history.pushState({}, '', 'urun-makina.html');
+        });
+    });
+}
+// End
