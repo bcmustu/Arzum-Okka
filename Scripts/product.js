@@ -31,7 +31,7 @@ function colorSelect() {
 			setTimeout(function(){
 				sample.css('opacity','1');
 			},200);
-			sample.attr('src',baseSource+'-'+selectedColor+fileType);
+			sample.attr('src',baseSource+selectedColor+fileType);
 		},700);
 	})
 }

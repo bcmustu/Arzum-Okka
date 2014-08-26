@@ -230,8 +230,17 @@ section.productDetail .productDetailDescription .technicalImages img {
     margin-right:10px;
 }
 
+.introSection .photoGallery .galleryItem a img {
+    float:left;
+    width:135px;
+    height:135px;
+}
 
+.introSection .photoGallery .galleryItem:last-child a img {
+    margin: 15px;
 
+    margin-top: 36px;
+}
 
 
 
@@ -679,6 +688,7 @@ section.productDetail .productImageColorPalette .productColorSample{
     }
     .articleMaxiSlider .divImgContainer iframe {
         width: 100%;
+        margin-top: 80px;
         height: 500px;
     }
 
