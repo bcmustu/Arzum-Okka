@@ -27,6 +27,7 @@ section.loginPage .pageContent {
     left: 50%;
     margin-left: -70px;
     margin-top: calc(100vh - 627px);
+    padding-top: 30px;
 }
 
 .pageContent {}
@@ -44,6 +45,7 @@ section.personalDataPage .pageContent .pageTitle, section.loginPage .pageContent
     padding-top: 20px;
     margin: 35px auto;
     border-top:1px solid #fee5cc;
+    margin-top: 0px;
 }
 
 section.personalDataPage .pageContent .formSection, section.loginPage .pageContent .formSection, section.signUpPage .pageContent .formSection {
@@ -150,7 +152,7 @@ div.alreadyAMemberOrNot label.additionalInputLabel {
 
 
     p.pContactGuide {
-        padding: 36px;
+        padding: 30px;
     
         padding-top: 0px;
         margin-top: -20px;
