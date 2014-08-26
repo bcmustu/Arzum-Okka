@@ -19,14 +19,17 @@ section.personalDataPage .pageContent {
     background: rgba(189,177,172, 0.9);
 }
 section.loginPage .pageContent {
-    position: fixed;
+    position: relative;
     width: 600px;
     padding-bottom: 50px;
     bottom: 0px;
     background: rgba(189,177,172, 0.9);
     left: 50%;
     margin-left: -70px;
+    margin-top: calc(100vh - 627px);
 }
+
+.pageContent {}
 section.signUpPage .pageContent {
     position: fixed;
     width: 600px;
@@ -303,7 +306,6 @@ div.alreadyAMemberOrNot label.additionalInputLabel {
     
     p.pContactGuide {
         padding: 36px;
-    
         padding-top: 0px;
         margin-top: -20px;
         color: #441e15;

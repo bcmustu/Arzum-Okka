@@ -223,13 +223,13 @@ textarea{
     }
 
 .labelA a {
-	font-family:myriadpro;
+    font-family:myriadpro;
     display: inline-block;
     color:#000;
 }
 
 .labelB {
-	font-family: myriadPro;
+    font-family: myriadPro;
     display: inline-block;
     height: 38px;
     font-size: 16px;
@@ -281,6 +281,28 @@ input[type="checkbox"].checkboxTypeA {
 
 /* END CHECKBOX STYLE */
 
+/* DATE SELECTOR STYLE */
+
+.dateSelectors {
+
+}
+
+.dateSelectorHeader {
+    float: left;
+
+    line-height: 40px;
+    margin-right: 25px;
+}
+
+.dateSelectors select {
+    float: left;
+    
+    background-size: 6px !important;
+    background-position: 85% !important;
+    width: 141.6px;
+}
+
+/* END - DATE SELECTOR STYLE */
 
 /* RADIO STYLE */
 
