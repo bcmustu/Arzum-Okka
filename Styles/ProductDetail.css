@@ -755,15 +755,23 @@ section.productDetail .productImageColorPalette .productColorSample{
             vertical-align: middle;
         }
 
+
+    .articleMaxiSlider .divImgContainer {
+        text-align:center;
+    }
+
     .articleMaxiSlider .divImgContainer img {
         display: block;
         margin: 0 auto 0 auto;
     }
     .articleMaxiSlider .divImgContainer iframe {
         width: 100%;
+        margin: auto;
         margin-top: 80px;
         height: 500px;
-    }
+    
+        max-width: 600px;
+}
 
     .articleMaxiSlider .divCaptionContainer {
         text-align: center;

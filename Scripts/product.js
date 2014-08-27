@@ -108,7 +108,9 @@ function articleMaxiSlider(isOrientationChange) {
         e.preventDefault();
     });
 
-
+    setInterval(function(){
+        $('.articleMaxiSlider .divImgContainer iframe').height($('.articleMaxiSlider .divImgContainer iframe').width() * 0.6);
+    });
     // set slider dynamic style
     $('#articleMaxiSlider').css({
         height: sliderH,
