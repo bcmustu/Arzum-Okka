@@ -12,8 +12,42 @@ main h1.welcomeText {
     text-align: center;
 }
 
+.defaultUtilities{
+    position: fixed;
+    bottom: 0px;
+    left: 50%;
+    margin-left: -468px;
+}
 
-
+.watchVideo {
+    background-color:#210007;
+    width: 203px;
+    padding-left: 38px;
+    padding-top: 27px;
+    float: left;
+    height: 97px;
+    font-family: trajan;
+}
+.watchVideo img {
+    width: 45px !important;
+    height: 45px !important;
+    float: left;
+}
+.watchVideo p {
+    color: #c99f75 !important;
+    width: 40px;
+    float: left;
+    top: 5px;
+    margin-left: 11px;
+    font-size: 13.8px;
+}
+.redDotLogo {
+    background-color: #fff;
+    padding-left: 20px;
+    padding-bottom: 0px;
+    width: 173px;
+    float: left;
+}
 
 
 /* Screen */

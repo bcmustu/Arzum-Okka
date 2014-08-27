@@ -214,7 +214,12 @@ section.productDetail .productDetailDescription .technicalImages img {
     width: 100%;
 }
 
-
+.introSection .photoGallery {
+    background:#38120d;
+    float:left;
+    width: 720px;
+    padding:10px;
+}
 .introSection .photoGallery .galleryItem {
     background-color:rgba(255,255,255,0.1);
     float:left;
@@ -223,7 +228,7 @@ section.productDetail .productDetailDescription .technicalImages img {
     margin-right:10px;
 }
 .introSection .photoGallery .galleryItem:last-child {
-    background-color:rgba(255,255,255,0.1);
+    background-color:transparent;
     float:left;
     width:90px;
     height:135px;
@@ -237,7 +242,7 @@ section.productDetail .productDetailDescription .technicalImages img {
 }
 
 .introSection .photoGallery .galleryItem:last-child a img {
-    margin: 15px;
+    margin: 30px;
 
     margin-top: 36px;
 }
@@ -473,6 +478,41 @@ section.productDetail .productImageColorPalette .productColorSample{
         cursor: pointer;
     }
 
+.introSection .photoGallery {
+    background:#38120d;
+    float:left;
+    width: 100%;
+    padding:10px;
+    padding-right: 0px;
+}
+.introSection .photoGallery .galleryItem {
+    background-color:rgba(255,255,255,0.1);
+    float:left;
+    width: 129px;
+    height: 129px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.introSection .photoGallery .galleryItem:last-child {
+    background-color:transparent;
+    width:90px;
+    height:135px;
+    float: none;
+    margin: auto;
+    left: -20px;
+}
+
+.introSection .photoGallery .galleryItem a img {
+    float:left;
+    width: 129px;
+    height: 129px;
+}
+
+.introSection .photoGallery .galleryItem:last-child a img {
+    margin: 30px;
+
+    margin-top: 36px;
+}
 }
 
 @media all and (min-width: 401px) and (max-width: 700px) {
@@ -575,6 +615,39 @@ section.productDetail .productImageColorPalette .productColorSample{
         border-radius: 50%;
         cursor: pointer;
     }
+
+.introSection .photoGallery {
+    background:#38120d;
+    float:left;
+    width: 100%;
+    padding:10px;
+}
+.introSection .photoGallery .galleryItem {
+    background-color:rgba(255,255,255,0.1);
+    float:left;
+    width:135px;
+    height:135px;
+    margin-right: 4px;
+}
+.introSection .photoGallery .galleryItem:last-child {
+    background-color:transparent;
+    float:left;
+    width:90px;
+    height:135px;
+    margin-right:10px;
+}
+
+.introSection .photoGallery .galleryItem a img {
+    float:left;
+    width:135px;
+    height:135px;
+}
+
+.introSection .photoGallery .galleryItem:last-child a img {
+    margin: 30px;
+
+    margin-top: 36px;
+}
 
 }
 
@@ -726,7 +799,7 @@ section.productDetail .productImageColorPalette .productColorSample{
     z-index: 5;
     width: 42px;
     height: 42px;
-    border: 2px solid #6c6c6c;
+    border: 1px solid #232323;
     overflow: hidden;
     cursor: pointer;
     background-color: #000;
@@ -735,7 +808,7 @@ section.productDetail .productImageColorPalette .productColorSample{
 
     .divOverlay .close:after {
         content: '';
-        height: 3px;
+        height: 1px;
         width: 16px;
         border-radius: 10px;
         position: absolute;
@@ -754,7 +827,7 @@ section.productDetail .productImageColorPalette .productColorSample{
 
     .divOverlay .close:before {
         content: '';
-        height: 3px;
+        height: 1px;
         width: 16px;
         border-radius: 10px;
         position: absolute;

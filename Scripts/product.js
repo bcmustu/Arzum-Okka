@@ -163,13 +163,23 @@ function articleMaxiSlider(isOrientationChange) {
 
 // close article maxi slider setup which uses touchstart instead of click
 function articleMaxiSliderCloseSetup() {
-    $('.divOverlay div.close').on("touchstart", function (ev) {
+    $('.divOverlay div.close').on("click", function (ev) {
+    	ev.stopPropagation();
         $('.divOverlay').stop(true, false).fadeOut(function () {
             slideNoToInitiate = 0;
             articleMaxiSliderQuickChanges();
-            $('body').unbind('touchmove');
             history.pushState({}, '', 'urun-makina.html');
         });
+    });
+    $('.divOverlay').on("click", function (ev) {
+        $('.divOverlay').stop(true, false).fadeOut(function () {
+            slideNoToInitiate = 0;
+            articleMaxiSliderQuickChanges();
+            history.pushState({}, '', 'urun-makina.html');
+        });
+    });
+    $('#articleMaxiSlider').on("click", function (ev) {
+    	ev.stopPropagation();
     });
 }
 // End
