@@ -5,7 +5,7 @@ button,
 label,
 textarea{
     font-family:'Nova';
-    font-family: myriadpro;
+    font-family: Meta;
 }
 
 
@@ -20,7 +20,7 @@ textarea{
     background-color: #e2cfbf;
     border: 0px;
     color: #441e15;
-    font-family: MyriadPro;
+    font-family: Meta;
     font-weight:500;
     padding:20px;
     margin-bottom:5px;
@@ -80,7 +80,7 @@ textarea{
     background-color: #e2cfbf;
     border: 0px;
     color: #441e15;
-    font-family: MyriadPro;
+    font-family: Meta;
     font-weight:500;
     padding: 15px;
     margin-bottom:5px;
@@ -103,7 +103,7 @@ textarea{
 .buttonB{
     background: #e2cfbf;
     border: 0;
-    font-family: myriadPro;
+    font-family: Meta;
     padding: 5px 20px;
     padding-top: 9px;
     font-weight: 500;
@@ -223,13 +223,13 @@ textarea{
     }
 
 .labelA a {
-    font-family:myriadpro;
+    font-family:Meta;
     display: inline-block;
     color:#000;
 }
 
 .labelB {
-    font-family: myriadPro;
+    font-family: Meta;
     display: inline-block;
     height: 38px;
     font-size: 16px;

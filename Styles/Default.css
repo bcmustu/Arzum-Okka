@@ -21,8 +21,8 @@ main h1.welcomeText {
 
 .watchVideo {
     background-color:#210007;
-    width: 203px;
-    padding-left: 38px;
+    width: 185px;
+    padding-left: 35px;
     padding-top: 27px;
     float: left;
     height: 97px;
@@ -40,6 +40,7 @@ main h1.welcomeText {
     top: 5px;
     margin-left: 11px;
     font-size: 13.8px;
+    font-family: meta;
 }
 .redDotLogo {
     background-color: #fff;
@@ -60,11 +61,23 @@ main h1.welcomeText {
         padding-top: 70px;
         line-height: 16px;
     }
+    .defaultUtilities {
+        position: fixed;
+        bottom: 0px;
+        display: none;
+        left: 50%;
+        margin-left: -468px;
+    }
 
 }
 
 @media all and (min-width: 401px) and (max-width: 700px) {
-
+    .defaultUtilities {
+        position: fixed;
+        bottom: 0px;
+        left: 50%;
+        margin-left: -468px;
+    }
 }
 
 @media all and (min-width: 701px) and (max-width: 1018px) {
@@ -76,7 +89,13 @@ main h1.welcomeText {
         padding-top: 65px;
         line-height: 30px;
     }
-
+    .defaultUtilities {
+        position: fixed;
+        bottom: 0px;
+        right: 0px;
+        left: auto;
+        margin-left: 0px;
+    }
 }
 
 @media all and (min-width: 1019px) and (max-width: 1274px) {
@@ -87,9 +106,19 @@ main h1.welcomeText {
         padding-top: 125px;
         line-height: 30px;
     }
-
+    .defaultUtilities {
+        position: fixed;
+        bottom: 0px;
+        left: 50%;
+        margin-left: -468px;
+    }
 }
 
 @media all and (min-width: 1275px) {
-
+    .defaultUtilities {
+        position: fixed;
+        bottom: 0px;
+        left: 50%;
+        margin-left: -566px;
+    }
 }
