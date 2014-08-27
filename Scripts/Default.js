@@ -98,16 +98,6 @@ function articleMaxiSlider(isOrientationChange) {
     var sponsorHeight = 0;
 
 
-    // disable touchmove and allow the touch for divCaptionContainer
-    $('body').bind('touchmove', function (e) {
-        $('#articleMaxiSlider .divCaptionContainer div').bind("touchmove", function (e) {
-            e.stopPropagation();
-        });
-
-        e.preventDefault();
-    });
-
-
     // set slider dynamic style
     $('#articleMaxiSlider').css({
         height: sliderH,

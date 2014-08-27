@@ -170,6 +170,7 @@ function articleMaxiSliderCloseSetup() {
             articleMaxiSliderQuickChanges();
             history.pushState({}, '', 'urun-makina.html');
         });
+    $('body').unbind('touchmove');
     });
     $('.divOverlay').on("click", function (ev) {
         $('.divOverlay').stop(true, false).fadeOut(function () {
@@ -177,6 +178,7 @@ function articleMaxiSliderCloseSetup() {
             articleMaxiSliderQuickChanges();
             history.pushState({}, '', 'urun-makina.html');
         });
+    $('body').unbind('touchmove');
     });
     $('#articleMaxiSlider').on("click", function (ev) {
     	ev.stopPropagation();
